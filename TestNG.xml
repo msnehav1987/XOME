@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XOME Suite" parallel="false">
+<test name = "All Tests Run including Smoke and Regression" preserve-order="true">
+	<groups>
+		<run>
+			<include name="smoke" />
+			<include name="regression"/>
+	        <exclude name="P3"/>
+		</run>
+	</groups>
+	
+	  <classes>
+	  	<class name="webTests.Login_NegativeTests" />
+		<class name="webTests.Login_and_Search" />
+		<class name="webTests.SearchforSpecificProperty" />
+	    <class name="webTests.SignUp_NegativeTests" />
+        	<class name="webTests.SignUp_NewUser" />
+        <class name="webTests.SortResultsByPriceBedBath" />
+        	<class name="webTests.FilterMoreResultsByKeyword" />
+        	<class name="webTests.FilterMoreResultsByPropertyType" />
+        	<class name="webTests.FilterMoreResultsByResidentialOptions" />
+        	<class name="webTests.FilterMoreResultsBySquareFeet" />
+        	<class name="webTests.FilterMoreResultsByStatus" />        	
+        	<class name="webTests.FilterMoreResultsByYear" />
+        	
+     </classes>
+
+</test>
+</suite>

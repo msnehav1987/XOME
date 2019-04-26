@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XOME Suite" parallel="false">
+    <test name = "Specific Tests Run" preserve-order="true">
+		<classes>
+        	<class name="webTests.FilterMoreResultsByPropertyType" />
+        	<class name="webTests.FilterMoreResultsByYear" />
+        	<class name="webTests.FilterMoreResultsByKeyword" />
+		</classes>
+	</test>
+</suite>

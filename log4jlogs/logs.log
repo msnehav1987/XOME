@@ -1,0 +1,142 @@
+
+2018-04-28 16:03:14 [main] INFO  MFilterResults_Page:961 - Condo, Contemporary, 1 Story
+2018-04-28 16:03:22 [main] INFO  MFilterResults_Page:975 - Condo, 2 Story
+2018-04-28 16:03:29 [main] INFO  MFilterResults_Page:975 - Condo, Spanish, 2 Story
+2018-04-28 16:03:29 [main] INFO  MFilterResults_Page:994 - It filter by condo successfully.
+2018-04-28 16:04:34 [main] INFO  MFilterResults_Page:846 - Single Family, French Provincial, 2 Story
+2018-04-28 16:04:41 [main] INFO  MFilterResults_Page:860 - Single Family, Traditional, 2 Story
+2018-04-28 16:04:48 [main] INFO  MFilterResults_Page:860 - Single Family, 2 Story
+2018-04-28 16:04:48 [main] INFO  MFilterResults_Page:879 - It filter by Single Family successfully.
+2018-04-28 16:05:47 [main] INFO  MFilterResults_Page:903 - Townhouse, 2 Story
+2018-04-28 16:05:54 [main] INFO  MFilterResults_Page:918 - Townhouse, 2 Story
+2018-04-28 16:06:01 [main] INFO  MFilterResults_Page:918 - Townhouse, 3+ Story
+2018-04-28 16:06:01 [main] INFO  MFilterResults_Page:937 - It filter by Townhouse successfully.
+2018-04-28 16:08:23 [main] INFO  MFilterResults_Page:549 - yearmatch2 is true
+2018-04-28 16:08:34 [main] INFO  MFilterResults_Page:554 - yearmatch3 is true
+2018-04-28 16:08:34 [main] INFO  MFilterResults_Page:562 - It filter by min year 1995 and max year 2015 successfully.
+
+2018-04-28 17:25:22 [main] INFO  MLogin_Page:82 - sqatester2018+04282018172522@gmail.com
+2018-04-28 17:25:41 [main] INFO  MLogin_Page:109 - Welcome Amy
+2018-04-28 17:25:42 [main] INFO  MLogin_Page:118 - Signed up successfully.
+2019-03-25 10:44:52 [main] INFO  MFilterResults_Page:516 - yearmatch1 is true
+2019-03-25 10:45:04 [main] INFO  MFilterResults_Page:550 - yearmatch2 is true
+2019-03-25 10:45:16 [main] INFO  MFilterResults_Page:555 - yearmatch3 is true
+2019-03-25 10:45:16 [main] INFO  MFilterResults_Page:563 - It filter by min year 1995 and max year 2015 successfully.
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2013
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2005
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2016
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2001
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2017
+2019-03-25 10:50:51 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2004
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2001
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2014
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2015
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2016
+2019-04-14 13:47:46 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:972 - search keyword: hardwood floor
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:973 - prop1_description matches: yes
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:974 - prop2_description matches: yes
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:975 - prop3_description matches: yes
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:976 - prop4_description matches: yes
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:977 - prop5_description matches: yes
+2019-04-14 17:19:46 [main] INFO  FilterMoreResults_Page:982 - It filtered by keyword correctly
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1160 - Property type to filter by is Land.
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1161 - prop1_proptype matches: yes
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1162 - prop2_proptype matches: yes
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1163 - prop3_proptype matches: yes
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1164 - prop4_proptype matches: yes
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1165 - prop5_proptype matches: yes
+2019-04-14 17:28:25 [main] INFO  FilterMoreResults_Page:1170 - It filtered by property type correctly
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2011
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2004
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2001
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2014
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2015
+2019-04-14 17:29:22 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:972 - search keyword: hardwood floor
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:973 - prop1_description matches: yes
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:974 - prop2_description matches: yes
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:975 - prop3_description matches: yes
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:976 - prop4_description matches: yes
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:977 - prop5_description matches: yes
+2019-04-14 17:30:10 [main] INFO  FilterMoreResults_Page:982 - It filtered by keyword correctly
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1160 - Property type to filter by is Land.
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1161 - prop1_proptype matches: yes
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1162 - prop2_proptype matches: yes
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1163 - prop3_proptype matches: yes
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1164 - prop4_proptype matches: yes
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1165 - prop5_proptype matches: yes
+2019-04-14 17:35:43 [main] INFO  FilterMoreResults_Page:1170 - It filtered by property type correctly
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:972 - search keyword: hardwood floor
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:973 - prop1_description matches: yes
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:974 - prop2_description matches: yes
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:975 - prop3_description matches: yes
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:976 - prop4_description matches: yes
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:977 - prop5_description matches: yes
+2019-04-14 17:36:56 [main] INFO  FilterMoreResults_Page:982 - It filtered by keyword correctly
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1160 - Property type to filter by is Land.
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1161 - prop1_proptype matches: yes
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1162 - prop2_proptype matches: yes
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1163 - prop3_proptype matches: yes
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1164 - prop4_proptype matches: yes
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1165 - prop5_proptype matches: yes
+2019-04-14 17:47:09 [main] INFO  FilterMoreResults_Page:1170 - It filtered by property type correctly
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:972 - search keyword: hardwood floor
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:973 - prop1_description matches: yes
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:974 - prop2_description matches: yes
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:975 - prop3_description matches: yes
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:976 - prop4_description matches: yes
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:977 - prop5_description matches: yes
+2019-04-14 17:48:25 [main] INFO  FilterMoreResults_Page:982 - It filtered by keyword correctly
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2011
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2004
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2001
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2014
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2015
+2019-04-14 17:53:29 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2011
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2004
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2001
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2014
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2015
+2019-04-14 18:20:18 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1160 - Property type to filter by is Land.
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1161 - prop1_proptype matches: yes
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1162 - prop2_proptype matches: yes
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1163 - prop3_proptype matches: yes
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1164 - prop4_proptype matches: yes
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1165 - prop5_proptype matches: yes
+2019-04-14 18:27:35 [main] INFO  FilterMoreResults_Page:1170 - It filtered by property type correctly
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2011
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2004
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2001
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2014
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2015
+2019-04-14 18:29:58 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:972 - search keyword: hardwood floor
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:973 - prop1_description matches: yes
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:974 - prop2_description matches: yes
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:975 - prop3_description matches: yes
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:976 - prop4_description matches: yes
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:977 - prop5_description matches: yes
+2019-04-14 18:31:37 [main] INFO  FilterMoreResults_Page:982 - It filtered by keyword correctly
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1160 - Property type to filter by is Land.
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1161 - prop1_proptype matches: yes
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1162 - prop2_proptype matches: yes
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1163 - prop3_proptype matches: yes
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1164 - prop4_proptype matches: yes
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1165 - prop5_proptype matches: yes
+2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1170 - It filtered by property type correctly

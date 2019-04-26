@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [XOME Suite]">
+  <test thread-count="5" name="Specific Tests Run(failed)">
+    <classes>
+      <class name="mobileTests.MFilterByYear">
+        <methods>
+          <include name="OnFailure"/>
+          <include name="mFilterYear"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- mobileTests.MFilterByYear -->
+    </classes>
+  </test> <!-- Specific Tests Run(failed) -->
+</suite> <!-- Failed suite [XOME Suite] -->
