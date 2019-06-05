@@ -140,3 +140,11 @@
 2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1164 - prop4_proptype matches: yes
 2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1165 - prop5_proptype matches: yes
 2019-04-14 18:41:16 [main] INFO  FilterMoreResults_Page:1170 - It filtered by property type correctly
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:875 - max year 2017
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2015
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2006
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2007
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2003
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2005
+2019-05-19 12:02:50 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly

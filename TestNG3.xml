@@ -3,9 +3,8 @@
 <suite name="XOME Suite" parallel="false">
     <test name = "Specific Tests Run" preserve-order="true">
 		<classes>
-        	<class name="webTests.FilterMoreResultsByPropertyType" />
-        	<class name="webTests.FilterMoreResultsByYear" />
-        	<class name="webTests.FilterMoreResultsByKeyword" />
+		<class name="mobileTests.MFilterByKeyword" />
+        	<class name="mobileTests.MFilterBySqFt" />
 		</classes>
 	</test>
 </suite>
