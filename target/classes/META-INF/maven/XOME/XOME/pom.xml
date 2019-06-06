@@ -22,14 +22,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.21.0</version>
 				<configuration>
-				    <groups>smoke, regression</groups>
-          		    <excludedGroups>P3</excludedGroups>
-          		    <testFailureIgnore>true</testFailureIgnore>
+			   <!-- <groups>smoke, regression</groups> -->	    
+			   <!-- <excludedGroups>P3</excludedGroups> -->	
+			   <!-- <testFailureIgnore>true</testFailureIgnore> -->	
           			<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>TestNG3.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/TestNG.xml</suiteXmlFile>
 					</suiteXmlFiles>				
-        			</configuration>
+        		</configuration>
 			</plugin>
 			<plugin>
 	            <groupId>org.apache.maven.plugins</groupId>

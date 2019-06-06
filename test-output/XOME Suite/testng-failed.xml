@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [XOME Suite]">
-  <test thread-count="5" name="Specific Tests Run(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [XOME Suite]">
+  <listeners>
+    <listener class-name="common.TestListener"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="Subset of tests(failed)">
     <classes>
-      <class name="mobileTests.MFilterByYear">
+      <class name="webTests.SignUp_NewUser">
         <methods>
+          <include name="signUp_NewUser" invocation-numbers="0"/>
           <include name="OnFailure"/>
-          <include name="mFilterYear"/>
           <include name="Setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- mobileTests.MFilterByYear -->
+      </class> <!-- webTests.SignUp_NewUser -->
     </classes>
-  </test> <!-- Specific Tests Run(failed) -->
+  </test> <!-- Subset of tests(failed) -->
 </suite> <!-- Failed suite [XOME Suite] -->

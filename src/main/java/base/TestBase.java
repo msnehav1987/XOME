@@ -281,7 +281,8 @@ public class TestBase {
     			System.out.println(testResult.getStatus()); 
     		} 
     	} 
-
+    	
+    	
 
     @AfterMethod(alwaysRun=true)
     //Use after method instead of after class or after test so each method/test will open in new browser; 

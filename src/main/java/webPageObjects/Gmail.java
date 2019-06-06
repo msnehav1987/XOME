@@ -1,10 +1,12 @@
 package webPageObjects;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,25 +32,31 @@ public class Gmail {
 			static By pwd = By.cssSelector("div#password>div.aCsJod.oJeWuf>div.aXBtI.Wic03c>div.Xb9hP>input.whsOnd.zHQkBf");
 			static By pwdnextbtn = By.cssSelector("div#passwordNext>content.CwaK9>span.RveJvd.snByac");
 			
-			static By searchemailfield = By.cssSelector("input#gbqfq");
-			static By searchemailbutton = By.cssSelector("button#gbqfb");
-			static By emailfrom = By.xpath(".//table[@class='F cf zt']/tbody/tr[1]/td[4]/div[2]/span");
-			static By emailtitle = By.cssSelector("table.F.cf.zt>tbody>tr:nth-of-type(1)>td:nth-of-type(6)>div>div>div:nth-of-type(2)>span:nth-of-type(1)>b");
-			static By thankyoutext1 = By.xpath("(.//sup[1]/parent::td)[1]");//Thank you for registering for
-			//alternate By.cssSelector("td.m_-5217904043742698481message_header3.m_-5217904043742698481content");
-		    static By emailtext = By.xpath(".//strong/parent::td"); //Your username is:
+			static By searchemailfield = By.cssSelector("input.gb_Qe");
+			static By searchemailbutton = By.cssSelector("button.gb_0e.gb_1e>svg");
+			static By emailfrom = By.cssSelector("div.yW>span.bA4>span.zF");
+			static By emailtitle = By.cssSelector("div.y6>span.bog>span.bqe");
+			//static By thankyoutext1 = By.xpath(".//sup[1]/parent::td[1]");//Thank you for registering for
+			static By thankyoutext1 = By.cssSelector("td[class*='message_header2']"); //Thank you for registering for
+		    //static By emailtext = By.xpath(".//strong/parent::td"); //Your username is:
+			static By emailtext = By.cssSelector("td[class*='message_header3']"); //Your username is:
 			
-		    static By moreoptionsdropdownpic = By.cssSelector("img.hA.T-I-J3[role='menu']");
-		    static By dropdownoptions = By.cssSelector("div.b7.J-M");
-		    static By deletethismessage = By.cssSelector("img.dS.J-N-JX");
-		    //static By deleteemailbtn = By.cssSelector("div.T-I.J-J5-Ji.nX.T-I-ax7.T-I-Js-Gs.ar7>div.asa>div.ar9.T-I-J3.J-J5-Ji");
+			/*** Doesn't work
+		    static By toptooltipbar = By.cssSelector("div[gh='tm']");
+		    static By deletetoptooltip= By.cssSelector("div.asa>div.ar9.T-I-J3.J-J5-Ji");
+		    ***/
+			static By threedotsmenu = By.cssSelector("div.T-I.J-J5-Ji.T-I-Js-Gs.aap.T-I-awG.T-I-ax7.L3[aria-label='More']");
+			static By threedotsopenmenudrpdown = By.cssSelector("div.b7.J-M");
+			static By deletethismsglink = By.cssSelector("div.cj[act='11']>img.dS.J-N-JX");
+			
 		    static By expandmorebtn = By.cssSelector("span.CJ");
-		    static By trashlink = By.cssSelector("div.TO>div>div:nth-of-type(2)>span>a[title='Trash']");
-		    static By emptytrashnowlink = By.cssSelector("span.x2[role='button']");
-		    static By clickalertdialog = By.cssSelector("div.Kj-JD");
-		    static By emptytrashokbtn = By.cssSelector("button.J-at1-auR.J-at1-atl");
+		    static By trashlink = By.cssSelector("a.J-Ke.n0[aria-label='Trash']");
+		 
+		    static By emptytrashnow = By.cssSelector("span.x2");
+		    static By emptytrashnowok = By.cssSelector("button.J-at1-auR.J-at1-atl");
 		    
-		    public static String [] checkRegisterEmail (WebDriver webdriver, String email, String gmailpwd, String gmailsearch) 
+		    
+		    public static String [] checkRegisterEmail (WebDriver webdriver, String email, String gmailpwd, String gmailsearch) throws InterruptedException 
 		    {
 		    		webdriver.get("https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
 		    		WebDriverWait wait = new WebDriverWait (webdriver, 90);
@@ -65,6 +73,8 @@ public class Gmail {
 			    WebElement next2 = wait.until(ExpectedConditions.elementToBeClickable(pwdnextbtn));
 			    next2.click();
 			    
+			    log.info("Wait 60secs before searching for email.");
+			    Thread.sleep(60000);
 			    WebElement search_field = wait.until(ExpectedConditions.elementToBeClickable(searchemailfield));
 			    WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchemailbutton));
 			    search_field.click();
@@ -75,11 +85,11 @@ public class Gmail {
 			    
 			    //Wait up to 3 minutes for registration email to come into gmail inbox.
 			    
-			    WebDriverWait wait2 = new WebDriverWait (webdriver, 240);
+			    WebDriverWait wait2 = new WebDriverWait (webdriver, 180);
 			    WebElement email_from = wait2.until(ExpectedConditions.presenceOfElementLocated(emailfrom));
-			    WebElement email_title = wait2.until(ExpectedConditions.elementToBeClickable(emailtitle));
-			    
 			    String xomename = email_from.getAttribute("innerHTML");
+			    
+			    WebElement email_title = wait2.until(ExpectedConditions.elementToBeClickable(emailtitle));
 			    String welcometoxome = email_title.getText();
 			    
 			    String [] emailarray = new String [4];
@@ -88,11 +98,32 @@ public class Gmail {
 			    
 			    email_title.click();
 			    
-			    WebElement thankyou1 = wait.until(ExpectedConditions.presenceOfElementLocated(thankyoutext1));
-			    WebElement yourusernameis = wait.until(ExpectedConditions.presenceOfElementLocated(emailtext));
+			    Thread.sleep(5000);//Need some wait here or intermittently causes false failures when text doesn't fully load.
 			    
-			    String thanks = thankyou1.getText();
-			    String yourusername = yourusernameis.getText();
+			    WebElement thankyou1;
+			    WebElement yourusernameis;
+			    String thanks = "";
+			    String yourusername = "";
+			    try
+			    {
+			    		thankyou1 = wait.until(ExpectedConditions.presenceOfElementLocated(thankyoutext1));
+			    		thanks = thankyou1.getText();
+			    }
+			    catch (Exception e)
+			    {
+			    		log.info("Can't get thank you for registering text in email.");
+			    }
+			    
+			    try
+			    {
+				    yourusernameis = wait.until(ExpectedConditions.presenceOfElementLocated(emailtext));
+				    yourusername = yourusernameis.getText();
+			    }
+			    catch (Exception e)
+			    {
+			    		log.info("Can't get username text in email.");
+			    }
+
 	    
 			    emailarray[2] = thanks;
 			    emailarray[3] = yourusername;
@@ -102,41 +133,121 @@ public class Gmail {
 		    }
 		    
 
-		    public static void deleteGmail (WebDriver webdriver) 
+		    public static void deleteGmail (WebDriver webdriver) throws InterruptedException 
 		    {
-	    			WebDriverWait wait = new WebDriverWait (webdriver, 60);
-	    			WebElement moreoptionsdropdownbtn = wait.until(ExpectedConditions.elementToBeClickable(moreoptionsdropdownpic));
-	    			moreoptionsdropdownbtn.click();
+
+	    			//((JavascriptExecutor) webdriver).executeScript("window.scrollTo(document.body.scrollHeight, 0)");
+	    			//log.info("Scroll up to height of window via javascript.");
+
 	    			
-	    			webdriver.manage().timeouts().implicitlyWait(1000,TimeUnit.MILLISECONDS);
-	    			WebElement dropdown = wait.until(ExpectedConditions.presenceOfElementLocated(dropdownoptions));
-	    		    Actions action = new Actions(webdriver);
-			    action.moveToElement(dropdown).perform();
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    action.sendKeys(Keys.ARROW_DOWN).click().perform();
+	    			WebDriverWait wait = new WebDriverWait (webdriver, 60);
+	    			Actions action = new Actions(webdriver);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP);
+			    action.sendKeys(Keys.ARROW_UP).click().perform();
+    			    Thread.sleep(1000);
+    			
+    			    log.info("Scroll up to height of window.");
+    			
+	    			try {
+		    			WebElement threedots = wait.until(ExpectedConditions.elementToBeClickable(threedotsmenu));
+		    			threedots.click();
+		    			Thread.sleep(3000);
+	    				log.info("Found three dots menu.");
+	    			}
+	    			catch (Exception e)
+	    			{
+	    				log.info("Can't find three dots menu.");
+	    			}
 
-    			    webdriver.manage().timeouts().implicitlyWait(1000,TimeUnit.MILLISECONDS);
+	    			try
+	    			{
+	    				WebElement threedotsopenmenudrpdownoptions = wait.until(ExpectedConditions.presenceOfElementLocated(threedotsopenmenudrpdown));
+				    action.moveToElement(threedotsopenmenudrpdownoptions).perform();
+				    try
+				    {
+					    WebElement deletethismsglnk = wait.until(ExpectedConditions.elementToBeClickable(deletethismsglink));
+					    action.moveToElement(deletethismsglnk).click().build().perform();
+					    log.info("Clicked delete this message link without arrowing down.");
+				    }
+				    catch (Exception e)
+				    {
+					    action.sendKeys(Keys.ARROW_DOWN);
+					    action.sendKeys(Keys.ARROW_DOWN);
+					    action.sendKeys(Keys.ARROW_DOWN);
+					    action.sendKeys(Keys.ARROW_DOWN);
+					    action.sendKeys(Keys.ARROW_DOWN);
+					    action.sendKeys(Keys.ARROW_DOWN).click().build().perform();
+					    log.info("Clicked delete this message link by arrowing down.");
+				    }
+					    
+				    Thread.sleep(1000);
+				    log.info("Click delete option from three dots dropdown menu.");
+	    			}
+	    			catch (Exception e)
+	    			{
+					log.info("Can't click delete option from three dots dropdown menu.");
+	    			}
+	    			
 
-		    	    WebElement expandbtn = wait.until(ExpectedConditions.presenceOfElementLocated(expandmorebtn));
-		    	    action.moveToElement(expandbtn).click().perform();
-	    			webdriver.manage().timeouts().implicitlyWait(1000,TimeUnit.MILLISECONDS); //needed wait time so it can eventually click the trash link or else it clicks the spam link
-			    action.sendKeys(Keys.ARROW_DOWN);
-			    WebElement trash_link = wait.until(ExpectedConditions.presenceOfElementLocated(trashlink));
-	    	    		action.moveToElement(trash_link).click().perform();
-	    			webdriver.manage().timeouts().implicitlyWait(1000,TimeUnit.MILLISECONDS);
-	    	    		
-		    	    WebElement emptytrashnow = wait.until(ExpectedConditions.elementToBeClickable(emptytrashnowlink));
-		    	    emptytrashnow.click();
-    			    webdriver.manage().timeouts().implicitlyWait(1000,TimeUnit.MILLISECONDS); //needed wait time so it can eventually click the ok to delete btn
-    			    
-		    	    WebElement emptytrashok_btn = wait.until(ExpectedConditions.elementToBeClickable(emptytrashokbtn));
-		    	    emptytrashok_btn.click();
+	    			try
+	    			{
+	    				WebElement expandmorebtnsidebar = wait.until(ExpectedConditions.elementToBeClickable(expandmorebtn));
+	    				((JavascriptExecutor) webdriver).executeScript("arguments[0].click();", expandmorebtnsidebar);
+	    				Thread.sleep(1000);
+	    				log.info("Found side bar expand more button link.");
+	    			}
+	    			catch (Exception e)
+	    			{
+	    				log.info("Can't find side bar expand more button link.");
+	    			}
 
+	    			try {
+	    				
+    				    action.sendKeys(Keys.ARROW_DOWN).build().perform();				    
+    				    action.sendKeys(Keys.ARROW_DOWN).build().perform();
+
+
+			    	    WebElement trashlnk = wait.until(ExpectedConditions.elementToBeClickable(trashlink));
+			    	    ((JavascriptExecutor) webdriver).executeScript("arguments[0].click();", trashlnk);
+	    			    Thread.sleep(1000);
+	    				log.info("Scrolled down and found trash link after expanding more button on the sidebar.");
+	    			}
+	    			catch (Exception e)
+	    			{
+	    				log.info("Can't scroll down to find trash link after expanding more button on the sidebar.");
+	    			}
+	    			
+
+	    			try
+	    			{
+			    	    WebElement emptytrashnowlink = wait.until(ExpectedConditions.elementToBeClickable(emptytrashnow));
+			    	    action.moveToElement(emptytrashnowlink).click().build().perform();
+	    				log.info("Click empty trash now link.");
+	    			}
+	    			catch (Exception e)
+	    			{
+	    				log.info("Can't find empty trash now link.");
+	    			}
+	    			
+	    			try
+	    			{
+			    	    WebElement emptytrashnowokbtn = wait.until(ExpectedConditions.elementToBeClickable(emptytrashnowok));
+			    	    emptytrashnowokbtn.click();
+	    				log.info("Click empty trash now ok button.");
+	    			}
+	    			catch (Exception e)
+	    			{
+	    				log.info("Can't find empty trash now ok button popup.");
+	    			}
+
+		    	    
+		 
 		    }
 		    
 }

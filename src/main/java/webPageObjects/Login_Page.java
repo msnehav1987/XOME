@@ -21,7 +21,7 @@ public class Login_Page {
 	static By emaillogin = By.id("security_loginname");
 	static By pwdlogin = By.id("security_password");
 	static By submitbtn = By.cssSelector("input.btn.btn-primary");
-	static By emailpwddoesntmatchtext = By.cssSelector("div.row-fluid.errorMessageBox.errorMessageBoxServerSide>ul>li"); //Oops, the e-mail or password doesn't match.
+	static By emailpwddoesntmatchtext = By.xpath(".//*[@id=\"customerLoginForm\"]/div[3]/ul/li[contains(text(), \"Oops, the e-mail or password doesn't match.\")]");  //Oops, the e-mail or password doesn't match.
 	static By onemoreloginchancetext = By.cssSelector("div.row-fluid.errorMessageBox.errorMessageBoxServerSide>ul>li"); //You have 1 more login attempt before your account is locked. Please enter your login credentials properly, reset your password by clicking the \"Forgot your password ? \" link or contact Customer Service at 1-844-400-9663 for assistance.
 	static By verifysignedin = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
 	
@@ -51,46 +51,8 @@ public class Login_Page {
 	    return fieldisrequired;
     }
     
-    public static String signinBlankEmail (WebDriver webdriver, String password)
-    {
-    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-    		WebElement email = wait.until(ExpectedConditions.presenceOfElementLocated(emaillogin));
-    		WebElement pwd = wait.until(ExpectedConditions.elementToBeClickable(pwdlogin));
-    		WebElement submit = wait.until(ExpectedConditions.elementToBeClickable(submitbtn));
-        pwd.click();
-    		pwd.clear();
-        pwd.sendKeys(password);
-
-        submit.click();
-	    
-        String fieldisrequired = email.getAttribute("required");
-        
-	    log.info("Check email field is required: "+fieldisrequired);
-
-	    return fieldisrequired;
-    }
-    
-    public static String signinBlankPwd (WebDriver webdriver, String login)
-    {
-    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
-    		WebElement email = wait.until(ExpectedConditions.elementToBeClickable(emaillogin));
-    		WebElement submit = wait.until(ExpectedConditions.elementToBeClickable(submitbtn));
-        email.click();
-    		email.clear();
-        email.sendKeys(login);
-
-        submit.click();
-	    
-        
-        WebElement emailpwd_doesntmatchtext = wait.until(ExpectedConditions.presenceOfElementLocated(emailpwddoesntmatchtext));
-        String wrongemailpwdtext = emailpwd_doesntmatchtext.getText();
-        
-	    log.info("Check wrong email pwd text: "+wrongemailpwdtext);
-
-	    return wrongemailpwdtext;
-    }
-    
-    public static String signinWrongPwd (WebDriver webdriver, String login, String password)
+   
+    public static String signinWrongPwd (WebDriver webdriver, String login, String password) throws InterruptedException
     {
     		WebDriverWait wait = new WebDriverWait (webdriver, 60);
     		WebElement email = wait.until(ExpectedConditions.elementToBeClickable(emaillogin));
@@ -105,6 +67,8 @@ public class Login_Page {
         pwd.sendKeys(password);
 
         submit.click();
+        
+        Thread.sleep(2000);
 	    
     		WebElement wrongpwd_text = wait.until(ExpectedConditions.presenceOfElementLocated(emailpwddoesntmatchtext));
         String wrongemailpwdtext = wrongpwd_text.getText();

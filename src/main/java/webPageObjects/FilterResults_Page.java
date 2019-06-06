@@ -37,8 +37,8 @@ public class FilterResults_Page {
 	static By sortbydropdownprice = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li:nth-of-type(2)>a>span.text");
 	static By sortbydropdownbeds = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li:nth-of-type(3)>a>span.text");
 	static By sortbydropdownbaths = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li:nth-of-type(4)>a>span.text");
-	static By sortasc = By.cssSelector("i.fa.fa-long-arrow-up");
-	static By sortdesc = By.cssSelector("i.fa.fa-long-arrow-down");
+	static By sortasc = By.cssSelector("button#search-results-sortdir"); //>i.fa.fa-long-arrow-up");
+	static By sortdesc = By.cssSelector("button#search-results-sortdir"); //>i.fa.fa-long-arrow-down");
 
 	
 	static By property1price = By.cssSelector("div#mapsearch-results>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>div.price>span");
@@ -122,7 +122,7 @@ public class FilterResults_Page {
 
 		log.info("Filter results max price is "+highestprice+"\n");
 		
-		WebElement uparrow = webdriver.findElement(sortasc);
+		WebElement uparrow = wait.until(ExpectedConditions.elementToBeClickable(sortasc));
 		uparrow.click(); //first click price sorts by descending order, 2nd click on the arrow then sorts by ascending order
 			
 		Thread.sleep(4000); //Must wait for this time to load, cant use implicit wait, because it will find the element, but the element is not in the state i want it at yet
@@ -183,11 +183,11 @@ public class FilterResults_Page {
 		WebElement prop4bed = wait.until(ExpectedConditions.presenceOfElementLocated(property4bed));
 		WebElement prop5bed = wait.until(ExpectedConditions.presenceOfElementLocated(property5bed));
 		
-		String numofbeds1 = prop1bed.getText().replaceAll(" bd", "");
-		String numofbeds2 = prop2bed.getText().replaceAll(" bd", "");
-		String numofbeds3 = prop3bed.getText().replaceAll(" bd", "");
-		String numofbeds4 = prop4bed.getText().replaceAll(" bd", "");
-		String numofbeds5 = prop5bed.getText().replaceAll(" bd", "");
+		String numofbeds1 = prop1bed.getText().replaceAll(" Bd", "");
+		String numofbeds2 = prop2bed.getText().replaceAll(" Bd", "");
+		String numofbeds3 = prop3bed.getText().replaceAll(" Bd", "");
+		String numofbeds4 = prop4bed.getText().replaceAll(" Bd", "");
+		String numofbeds5 = prop5bed.getText().replaceAll(" Bd", "");
 		
 		int beds1 = Integer.parseInt(numofbeds1);
 		int beds2 = Integer.parseInt(numofbeds2);
@@ -245,23 +245,23 @@ public class FilterResults_Page {
 		WebElement prop4bath = wait.until(ExpectedConditions.presenceOfElementLocated(property4bath));
 		WebElement prop5bath = wait.until(ExpectedConditions.presenceOfElementLocated(property5bath));
 		
-		String numofbaths1 = prop1bath.getText().replaceAll(" ba", "");
+		String numofbaths1 = prop1bath.getText().replaceAll(" Ba", "");
 		numofbaths1 = numofbaths1.replaceAll(" Full/1 Half", "");
         numofbaths1 = numofbaths1.replaceAll(" Full", "");
         
-		String numofbaths2 = prop2bath.getText().replaceAll(" ba", "");
+		String numofbaths2 = prop2bath.getText().replaceAll(" Ba", "");
 		numofbaths2 = numofbaths2.replaceAll(" Full/1 Half", "");
         numofbaths2 = numofbaths2.replaceAll(" Full", "");
         
-		String numofbaths3 = prop3bath.getText().replaceAll(" ba", "");
+		String numofbaths3 = prop3bath.getText().replaceAll(" Ba", "");
 		numofbaths3 = numofbaths3.replaceAll(" Full/1 Half", "");
         numofbaths3 = numofbaths3.replaceAll(" Full", "");
         
-		String numofbaths4 = prop4bath.getText().replaceAll(" ba", "");
+		String numofbaths4 = prop4bath.getText().replaceAll(" Ba", "");
 		numofbaths4 = numofbaths4.replaceAll(" Full/1 Half", "");
         numofbaths4 = numofbaths4.replaceAll(" Full", "");
         
-		String numofbaths5 = prop5bath.getText().replaceAll(" ba", "");
+		String numofbaths5 = prop5bath.getText().replaceAll(" Ba", "");
 		numofbaths5 = numofbaths5.replaceAll(" Full/1 Half", "");
         numofbaths5 = numofbaths5.replaceAll(" Full", "");
 

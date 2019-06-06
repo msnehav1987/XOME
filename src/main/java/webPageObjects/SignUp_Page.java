@@ -26,13 +26,14 @@ public class SignUp_Page {
 		static By lname = By.cssSelector("input#last-name[required='required']");
 		static By electronicmail = By.cssSelector("input#email-address[required='required']");
 		static By pwd = By.cssSelector("input#password-field[required='required']");
-		static By submit = By.cssSelector("input#submit-button.btn.btn-primary");	
+		static By submit = By.xpath(".//*[@id='submit-button' and @class='btn btn-primary']");	
 		static By invalidemailerrmsg = By.cssSelector("div.errorMessageBox>ul>li"); //Oops, looks like the e-mail you entered is invalid.
 		static By duplicateemailerrmsg = By.cssSelector("div.errorMessageBox.clearfix>ul>li");//Good news! We've already got you in our system! Please sign in using the link above.
 		static By pwdreqheader = By.cssSelector("div.password-requirements-dialog>h5"); //Password Requirements
 		static By eightcharsreq = By.cssSelector("div.password-requirements-dialog>div.requirement-item"); //at least 8 characters
 		static By verifysignedup = By.cssSelector("div.user-section.authenticated>div.NavSubmenu.btn-group>div.NavSubmenu-button>span.NavItem.top-level.user-menu>span");
-		
+		static By pwdregistrationhint = By.className("registration-password-hint");
+				
 	    public static void clickSignUp (WebDriver webdriver)
 	    {
 	    		WebDriverWait wait = new WebDriverWait (webdriver, 60);
@@ -63,7 +64,7 @@ public class SignUp_Page {
 	    }
 
 	    
-	    public static String testBlankLastName(WebDriver webdriver, String firstname) 
+	    public static String testBlankLastName(WebDriver webdriver, String firstname)
 	    {
 	    	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
 	    	    WebElement first_name = wait.until(ExpectedConditions.elementToBeClickable(fname));
@@ -72,6 +73,9 @@ public class SignUp_Page {
 		    first_name.click();
 		    first_name.clear();
 		    first_name.sendKeys(firstname);
+		    
+		    WebElement pwdhint = wait.until(ExpectedConditions.elementToBeClickable(pwdregistrationhint));
+		    pwdhint.click();
 		    
 	        submitbtn.click();
 	    	    
@@ -98,6 +102,9 @@ public class SignUp_Page {
 		    last_name.click();
 		    last_name.clear();
 		    last_name.sendKeys(lastname);
+		    
+		    WebElement pwdhint = wait.until(ExpectedConditions.elementToBeClickable(pwdregistrationhint));
+		    pwdhint.click();
 		    
 	        submitbtn.click();
 	    	    
@@ -129,6 +136,9 @@ public class SignUp_Page {
 		    el_mail.click();
 		    el_mail.clear();
 		    el_mail.sendKeys(email);
+		    
+		    WebElement pwdhint = wait.until(ExpectedConditions.elementToBeClickable(pwdregistrationhint));
+		    pwdhint.click();
 		    
 	        submitbtn.click();
 	    	    
@@ -201,6 +211,9 @@ public class SignUp_Page {
 		    pass_word.click();
 		    pass_word.clear();
 		    pass_word.sendKeys(password);
+		    
+		    WebElement pwdhint = wait.until(ExpectedConditions.elementToBeClickable(pwdregistrationhint));
+		    pwdhint.click();
 		    
 	        submitbtn.click();	    	    
           

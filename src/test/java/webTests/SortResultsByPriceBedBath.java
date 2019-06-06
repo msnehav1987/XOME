@@ -31,7 +31,7 @@ public class SortResultsByPriceBedBath extends TestBase{
  	static String timestamp = originaltimestamp.replace(':', 'x').substring(11);
 	static String foldername = className+timestamp;
 	static String errorname = "";
-
+	
 		
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByPrice (String searchkeyword) throws IOException, InterruptedException
@@ -69,6 +69,7 @@ public class SortResultsByPriceBedBath extends TestBase{
 		   softAssert.assertAll();
 	}
 
+
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByBeds (String searchkeyword) throws IOException, InterruptedException
 	{
@@ -105,7 +106,6 @@ public class SortResultsByPriceBedBath extends TestBase{
 		   softAssert.assertAll();
 	}
 	
-
 	
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void sortResultsByBaths (String searchkeyword) throws IOException, InterruptedException
@@ -164,4 +164,6 @@ public class SortResultsByPriceBedBath extends TestBase{
 	
 		   softAssert.assertAll();
 	}
+	
+
 }

@@ -33,6 +33,7 @@ public class FilterResultsByPriceBedBath extends TestBase{
 	static String foldername = className+timestamp;
 	static String errorname = "";
 
+
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByPrice (String searchkeyword, String price1, String price2) throws IOException, InterruptedException
 	{
@@ -50,11 +51,11 @@ public class FilterResultsByPriceBedBath extends TestBase{
 			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 			softAssert.fail();
 		}
-		
+
 		
 		   softAssert.assertAll();
 	}
-
+	
 
 	@Test(groups= {"smoke", "regression"}, dataProvider = "getData") 
 	public void filterResultsByBeds (String searchkeyword, String bed) throws IOException, InterruptedException
@@ -99,5 +100,5 @@ public class FilterResultsByPriceBedBath extends TestBase{
 		
 		   softAssert.assertAll();
 	}
-	
+
 }

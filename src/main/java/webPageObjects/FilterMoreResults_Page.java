@@ -43,24 +43,24 @@ public class FilterMoreResults_Page {
 	static By maxyrmenuopen = By.cssSelector("#criteria-filters-table>fieldset.fieldset-container.fieldset-grid.fieldset-year>div>div.filters-row>label:nth-child(3)>div>div>ul");
 	static By search_keyword = By.id("filters-keyword");
 	static By propertydescription = By.cssSelector("div#property-description>div.details-info.details-text-data");
-	static By propertytyperesidential = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-residential>span.proptype-toggler");
-	static By propertytypecommercial = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-commercial>span.proptype-toggler");
-	static By propertytypeland = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-land>span.proptype-toggler");
-	static By propertytypemultifamily = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-multifamily>span.proptype-toggler");
-	static By propertytyperesidential_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-residential>span.proptype-toggler.active");
-	static By propertytypecommercial_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-commercial>span.proptype-toggler.active");
-	static By propertytypeland_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-land>span.proptype-toggler.active");
-	static By propertytypemultifamily_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-multifamily>span.proptype-toggler.active");
-    static By residentialoptionsinglefamily = By.cssSelector("label.checkbox.label-hometype-singlefamily>span.hometype-toggler");
-    static By residentialoptionsinglefamily_selected = By.cssSelector("label.checkbox.label-hometype-singlefamily>span.hometype-toggler.active");
-    static By residentialoptioncondo = By.cssSelector("label.checkbox.label-hometype-condo>span.hometype-toggler");
-    static By residentialoptioncondo_selected = By.cssSelector("label.checkbox.label-hometype-condo>span.hometype-toggler.active");
-    static By residentialoptionfarm = By.cssSelector("label.checkbox.label-hometype-farm>span.hometype-toggler");
-    static By residentialoptionfarm_selected = By.cssSelector("label.checkbox.label-hometype-farm>span.hometype-toggler.active");
-    static By residentialoptionmobilehome = By.cssSelector("label.checkbox.label-hometype-mobilehome>span.hometype-toggler");
-    static By residentialoptionmobilehome_selected = By.cssSelector("label.checkbox.label-hometype-mobilehome>span.hometype-toggler.active");
-    static By residentialoptionother = By.cssSelector("label.checkbox.label-hometype-other>span.hometype-toggler");
-    static By residentialoptionother_selected = By.cssSelector("label.checkbox.label-hometype-other>span.hometype-toggler.active");
+	static By propertytyperesidential = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-residential>span.proptype-toggler.js-proptype-toggler");
+	static By propertytypecommercial = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-commercial>span.proptype-toggler.js-proptype-toggler");
+	static By propertytypeland = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-land>span.proptype-toggler.js-proptype-toggler");
+	static By propertytypemultifamily = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-multifamily>span.proptype-toggler.js-proptype-toggler");
+	static By propertytyperesidential_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-residential>span.proptype-toggler.js-proptype-toggler.active");
+	static By propertytypecommercial_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-commercial>span.proptype-toggler.js-proptype-toggler.active");
+	static By propertytypeland_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-land>span.proptype-toggler.js-proptype-toggler.active");
+	static By propertytypemultifamily_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-proptype-multifamily>span.proptype-toggler.js-proptype-toggler.active");
+    static By residentialoptionsinglefamily = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-singlefamily>span.hometype-toggler");
+    static By residentialoptionsinglefamily_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-singlefamily>span.hometype-toggler.active");
+    static By residentialoptioncondo = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-condo>span.hometype-toggler");
+    static By residentialoptioncondo_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-condo>span.hometype-toggler.active");
+    static By residentialoptionfarm = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-farm>span.hometype-toggler");
+    static By residentialoptionfarm_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-farm>span.hometype-toggler.active");
+    static By residentialoptionmobilehome = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-mobilehome>span.hometype-toggle");
+    static By residentialoptionmobilehome_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-mobilehome>span.hometype-toggler.active");
+    static By residentialoptionother = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-other>span.hometype-toggler");
+    static By residentialoptionother_selected = By.cssSelector("div.fieldset-icon-inputs>label.checkbox.label-hometype-other>span.hometype-toggler.active");
 	
     
     
@@ -916,11 +916,13 @@ public class FilterMoreResults_Page {
 			WebElement property8picelement = wait.until(ExpectedConditions.elementToBeClickable(property8pic));
 			((JavascriptExecutor) webdriver).executeScript("arguments[0].scrollIntoView();", property8picelement);
 		    ((JavascriptExecutor) webdriver).executeScript("arguments[0].click();", property8picelement);
+		    log.info("verify filter keyword - first property has no pic.");
 		}
 		else
 		{
 			WebElement property1picelement = wait.until(ExpectedConditions.elementToBeClickable(property1pic));
 			property1picelement.click();
+		    log.info("verify filter keyword - first property has pic.");
 		}
 		
 		Thread.sleep(4000); //Wait for details page to load
@@ -930,7 +932,8 @@ public class FilterMoreResults_Page {
 			WebElement propertydescriptionelement = webdriver.findElement(propertydescription);
 			((JavascriptExecutor) webdriver).executeScript("arguments[0].scrollIntoView();", propertydescriptionelement);
 			String propdescription = propertydescriptionelement.getText();
-
+		    log.info("verify filter keyword - scroll property description text into view.");
+		    
 			    //Need this because keyword can be used in the details page in uppercase or lowercase
 				if (Pattern.compile(Pattern.quote(keyword), Pattern.CASE_INSENSITIVE).matcher(propdescription).find())
 				{
@@ -948,8 +951,17 @@ public class FilterMoreResults_Page {
 				        			break;
 					}
 					
-					WebElement nextlistingbtn = wait.until(ExpectedConditions.elementToBeClickable(nextlistingbutton));
-					nextlistingbtn.click();
+				    		log.info("verify filter keyword - scroll through properties description has keyword.");
+					try
+					{
+					    WebElement nextlistingbtn = wait.until(ExpectedConditions.elementToBeClickable(nextlistingbutton));
+						nextlistingbtn.click();
+					}
+					catch (Exception e)
+					{
+					    log.info("verify filter keyword - A property doesn't have matching keyword in description so it can't scroll into next property.");
+					    break;
+					}
 				}
 				else
 				{
@@ -966,6 +978,7 @@ public class FilterMoreResults_Page {
 						case 5: prop5_description ="no";
 				        			break;
 					}
+					
 				}
 			}
 		
@@ -1354,7 +1367,7 @@ public class FilterMoreResults_Page {
 			((JavascriptExecutor) webdriver).executeScript("arguments[0].scrollIntoView();", propertytypeelement);
 			String proptype = propertytypeelement.getText();
 			
-				if (proptype.contains("Single Family"))
+				if (proptype.contains("Single Family") || proptype.contains("Townhouse"))
 				{
 					switch (i)
 					{
@@ -1370,8 +1383,15 @@ public class FilterMoreResults_Page {
 				        			break;
 					}
 					
-					WebElement nextlistingbtn = wait.until(ExpectedConditions.elementToBeClickable(nextlistingbutton));
-					nextlistingbtn.click();
+					try
+					{
+						WebElement nextlistingbtn = wait.until(ExpectedConditions.elementToBeClickable(nextlistingbutton));
+						nextlistingbtn.click();
+					}
+					catch (Exception e)
+					{
+						log.info("Verify FilterMoreResults_Page.verifyFilterByCondo that scrolling through description did not find condo and/or townhouse.");
+					}
 				}
 				else
 				{
@@ -1442,7 +1462,7 @@ public class FilterMoreResults_Page {
 			((JavascriptExecutor) webdriver).executeScript("arguments[0].scrollIntoView();", propertytypeelement);
 			String proptype = propertytypeelement.getText();
 			
-				if (proptype.contains("Condo") || proptype.contains("TownHouse"))
+				if (proptype.contains("Condo") || proptype.contains("TownHouse") || proptype.contains("Townhouse"))
 				{
 					switch (i)
 					{
@@ -1458,8 +1478,15 @@ public class FilterMoreResults_Page {
 				        			break;
 					}
 					
-					WebElement nextlistingbtn = wait.until(ExpectedConditions.elementToBeClickable(nextlistingbutton));
-					nextlistingbtn.click();
+					try
+					{
+						WebElement nextlistingbtn = wait.until(ExpectedConditions.elementToBeClickable(nextlistingbutton));
+						nextlistingbtn.click();
+					}
+					catch (Exception e)
+					{
+						log.info("Verify FilterMoreResults_Page.verifyFilterByCondo that scrolling through description did not find condo and/or townhouse.");
+					}
 				}
 				else
 				{

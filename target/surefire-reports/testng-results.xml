@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="XOME Suite" duration-ms="128970" started-at="2019-06-06T17:33:06Z" finished-at="2019-06-06T17:35:15Z">
+    <groups>
+      <group name="regression">
+        <method signature="FilterMoreResultsByKeyword.filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3]" name="filterResultsByKeyword" class="webTests.FilterMoreResultsByKeyword"/>
+        <method signature="FilterMoreResultsBySquareFeet.filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305]" name="filterResultsBySqFeet" class="webTests.FilterMoreResultsBySquareFeet"/>
+        <method signature="FilterMoreResultsByYear.filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699]" name="filterResultsByYear" class="webTests.FilterMoreResultsByYear"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="FilterMoreResultsByKeyword.filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3]" name="filterResultsByKeyword" class="webTests.FilterMoreResultsByKeyword"/>
+        <method signature="FilterMoreResultsBySquareFeet.filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305]" name="filterResultsBySqFeet" class="webTests.FilterMoreResultsBySquareFeet"/>
+        <method signature="FilterMoreResultsByYear.filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699]" name="filterResultsByYear" class="webTests.FilterMoreResultsByYear"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Subset of tests" duration-ms="128970" started-at="2019-06-06T17:33:06Z" finished-at="2019-06-06T17:35:15Z">
+      <class name="webTests.FilterMoreResultsByKeyword">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3]" name="Setup" is-config="true" duration-ms="3156" started-at="2019-06-06T17:33:06Z" finished-at="2019-06-06T17:33:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3]" name="filterResultsByKeyword" duration-ms="45486" started-at="2019-06-06T17:33:09Z" data-provider="getData" finished-at="2019-06-06T17:33:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[master bedroom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterResultsByKeyword -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-06T17:33:55Z" finished-at="2019-06-06T17:33:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=filterResultsByKeyword status=SUCCESS method=FilterMoreResultsByKeyword.filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByKeyword@4218d6a3]" name="tearDown" is-config="true" duration-ms="145" started-at="2019-06-06T17:33:55Z" finished-at="2019-06-06T17:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.FilterMoreResultsByKeyword -->
+      <class name="webTests.FilterMoreResultsByYear">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699]" name="Setup" is-config="true" duration-ms="3112" started-at="2019-06-06T17:34:20Z" finished-at="2019-06-06T17:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699]" name="filterResultsByYear" duration-ms="51748" started-at="2019-06-06T17:34:23Z" data-provider="getData" finished-at="2019-06-06T17:35:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2017]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterResultsByYear -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:35:15Z" finished-at="2019-06-06T17:35:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=filterResultsByYear status=SUCCESS method=FilterMoreResultsByYear.filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByYear@14cd1699]" name="tearDown" is-config="true" duration-ms="154" started-at="2019-06-06T17:35:15Z" finished-at="2019-06-06T17:35:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.FilterMoreResultsByYear -->
+      <class name="webTests.FilterMoreResultsBySquareFeet">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305]" name="Setup" is-config="true" duration-ms="3230" started-at="2019-06-06T17:33:55Z" finished-at="2019-06-06T17:33:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305]" name="filterResultsBySqFeet" duration-ms="21221" started-at="2019-06-06T17:33:58Z" data-provider="getData" finished-at="2019-06-06T17:34:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[750]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterResultsBySqFeet -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-06T17:34:20Z" finished-at="2019-06-06T17:34:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=filterResultsBySqFeet status=SUCCESS method=FilterMoreResultsBySquareFeet.filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@76505305]" name="tearDown" is-config="true" duration-ms="100" started-at="2019-06-06T17:34:20Z" finished-at="2019-06-06T17:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webTests.FilterMoreResultsBySquareFeet -->
+    </test> <!-- Subset of tests -->
+  </suite> <!-- XOME Suite -->
+</testng-results>

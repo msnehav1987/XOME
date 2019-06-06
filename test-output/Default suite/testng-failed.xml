@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mobileTests.MSignUp_NewUser">
+      <class name="webTests.SortResultsByPriceBedBath">
         <methods>
-          <include name="mSignUpNewUser" invocation-numbers="0"/>
           <include name="OnFailure"/>
+          <include name="sortResultsByBeds" invocation-numbers="0"/>
           <include name="Setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- mobileTests.MSignUp_NewUser -->
+      </class> <!-- webTests.SortResultsByPriceBedBath -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

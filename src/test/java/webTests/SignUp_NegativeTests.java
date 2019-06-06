@@ -33,7 +33,7 @@ public class SignUp_NegativeTests extends TestBase{
 	static String foldername = folderpath+className+timestamp;
 	static String errorname = "";
 
-		
+
 	@Test(groups= "P3", dataProvider = "getData")
 	public void signUpWithBlankFields (String firstname, String lastname, String email, String password) throws IOException, InterruptedException
 	{
@@ -44,6 +44,7 @@ public class SignUp_NegativeTests extends TestBase{
 		try
 		{
 			Assert.assertEquals(firstnameisrequired, "true");
+			log.info("Pass firstName is required");
 		}
 		catch(AssertionError e)
 		{ 
@@ -58,6 +59,7 @@ public class SignUp_NegativeTests extends TestBase{
 		try
 		{
 			Assert.assertEquals(lastnameisrequired, "true");
+			log.info("Pass lastName is required");
 		}
 		catch(AssertionError e)
 		{ 
@@ -67,11 +69,13 @@ public class SignUp_NegativeTests extends TestBase{
 			softAssert.fail();
 		}
 		
+		
 		String emailisrequired = SignUp_Page.testBlankEmail(webdriver, firstname, lastname);
 		
 		try
 		{
 			Assert.assertEquals(emailisrequired, "true");
+			log.info("Pass email is required");
 		}
 		catch(AssertionError e)
 		{ 
@@ -87,6 +91,7 @@ public class SignUp_NegativeTests extends TestBase{
 		try
 		{
 			Assert.assertEquals(pwdisrequired, "true");
+			log.info("Pass password is required");
 		}
 		catch(AssertionError e)
 		{ 
@@ -95,13 +100,13 @@ public class SignUp_NegativeTests extends TestBase{
 			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 			softAssert.fail();
 		}
-		
+
 		
 		softAssert.assertAll();
 
 	}	
 
-	
+
 	@Test(groups= "P3", dataProvider = "getData")
 	public void signUpWithInvalidEmail (String firstname, String lastname, String invalid, String duplicate, String password) throws IOException, InterruptedException
 	{
@@ -136,7 +141,9 @@ public class SignUp_NegativeTests extends TestBase{
 		softAssert.assertAll();
 		
 	}
+
 	
+
 	@Test(groups="regression", dataProvider = "getData")
 	public void signUpWithInvalidPassword (String firstname, String lastname, String email, String not8characters) throws IOException, InterruptedException
 	{
@@ -160,5 +167,5 @@ public class SignUp_NegativeTests extends TestBase{
 		softAssert.assertAll();
 		
 	}
-	
+
 }

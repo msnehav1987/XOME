@@ -30,9 +30,10 @@ public class SortResults_Page {
 			static By sortbydropdownprice = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li:nth-of-type(2)>a>span.text");
 			static By sortbydropdownbeds = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li:nth-of-type(3)>a>span.text");
 			static By sortbydropdownbaths = By.cssSelector("div.search-results-sorter>div.btn-group.bootstrap-select.open>div.dropdown-menu.open>ul.dropdown-menu.inner>li:nth-of-type(4)>a>span.text");
-			static By sortasc = By.cssSelector("i.fa.fa-long-arrow-up");
-			static By sortdesc = By.cssSelector("i.fa.fa-long-arrow-down");
-	
+			static By sortasc = By.cssSelector("button#search-results-sortdir"); //>i.fa.fa-long-arrow-up");
+			static By sortdesc = By.cssSelector("button#search-results-sortdir"); //>i.fa.fa-long-arrow-down");
+			
+			
 			static By property1newicon = By.cssSelector("div#mapsearch-results>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>div.ribbons>span.ribbon-new.ribbon");
 			
 			static By property1price = By.cssSelector("div#mapsearch-results>div:nth-of-type(2)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>div.price>span");
@@ -169,7 +170,7 @@ public class SortResults_Page {
 		            String price5 = pricefive.substring(1);
 		            int prop5price = Integer.parseInt(price5);
  
-		            String original = price1+", "+price2+", "+price3+", "+price4+", "+price5;
+		            String original = "["+price1+" "+price2+" "+price3+" "+price4+" "+price5+ "]";
 		            
 		            ArrayList<Integer> desclist = new ArrayList<Integer> ();
 		            desclist.add(prop1price);
@@ -180,7 +181,6 @@ public class SortResults_Page {
 		            
 		            MiscMethods.sortDescending(desclist);
 		            String sorteddesc = MiscMethods.returnsStringforIntegerArrayList(desclist);
-		            
 		            
 		            log.info("Original order is: "+original+"\n");
 		            log.info("Sorted descending order is: "+sorteddesc+"\n");
@@ -253,7 +253,7 @@ public class SortResults_Page {
 		            String price5 = pricefive.substring(1);
 		            int prop5price = Integer.parseInt(price5);
   
-			        String original = price1+", "+price2+", "+price3+", "+price4+", "+price5;
+			        String original = "["+ price1+" "+price2+" "+price3+" "+price4+" "+price5+"]";
 		            
 		            ArrayList<Integer> asclist = new ArrayList<Integer> ();
 		            asclist.add(prop1price);
@@ -317,9 +317,9 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property1_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property1bed));
 	    		            bed1 = property1_bed.getText(); 
-	    		            bed1=bed1.replaceAll(" bd", "");
+	    		            bed1=bed1.replaceAll(" Bd", "");
 	    		            prop1bed = Integer.parseInt(bed1);
-				            desclist.add(prop1bed);
+				        desclist.add(prop1bed);
 	            	    }
 		           
 	            		String bed2 = "";
@@ -334,7 +334,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property2_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property2bed));
 	    		            bed2 = property2_bed.getText(); 
-	    		            bed2=bed2.replaceAll(" bd", "");
+	    		            bed2=bed2.replaceAll(" Bd", "");
 	    		            prop2bed = Integer.parseInt(bed2);
 				            desclist.add(prop2bed);
 	            	    }
@@ -351,7 +351,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property3_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property3bed));
 	    		            bed3 = property3_bed.getText(); 
-	    		            bed3=bed3.replaceAll(" bd", "");
+	    		            bed3=bed3.replaceAll(" Bd", "");
 	    		            prop3bed = Integer.parseInt(bed3);
 				            desclist.add(prop3bed);
 	            	    }
@@ -368,7 +368,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property4_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property4bed));
 	    		            bed4 = property4_bed.getText(); 
-	    		            bed4=bed4.replaceAll(" bd", "");
+	    		            bed4=bed4.replaceAll(" Bd", "");
 	    		            prop4bed = Integer.parseInt(bed4);
 				            desclist.add(prop4bed);
 	            	    }	            	    
@@ -385,7 +385,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property5_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property5bed));
 	    		            bed5 = property5_bed.getText(); 
-	    		            bed5=bed5.replaceAll(" bd", "");
+	    		            bed5=bed5.replaceAll(" Bd", "");
 	    		            prop5bed = Integer.parseInt(bed5);
 				            desclist.add(prop5bed);
 	            	    }
@@ -402,7 +402,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property6_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property6bed));
 	    		            bed6 = property6_bed.getText(); 
-	    		            bed6=bed6.replaceAll(" bd", "");
+	    		            bed6=bed6.replaceAll(" Bd", "");
 	    		            prop6bed = Integer.parseInt(bed6);
 				            desclist.add(prop6bed);
 	            	    }
@@ -419,7 +419,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property7_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property7bed));
 	    		            bed7 = property7_bed.getText(); 
-	    		            bed7=bed7.replaceAll(" bd", "");
+	    		            bed7=bed7.replaceAll(" Bd", "");
 	    		            prop7bed = Integer.parseInt(bed7);
 				            desclist.add(prop7bed);
 	            	    }
@@ -436,7 +436,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property8_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property8bed));
 	    		            bed8 = property8_bed.getText(); 
-	    		            bed8=bed8.replaceAll(" bd", "");
+	    		            bed8=bed8.replaceAll(" Bd", "");
 	    		            prop8bed = Integer.parseInt(bed8);
 				            desclist.add(prop8bed);
 	            	    }
@@ -453,7 +453,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property9_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property9bed));
 	    		            bed9 = property9_bed.getText(); 
-	    		            bed9=bed9.replaceAll(" bd", "");
+	    		            bed9=bed9.replaceAll(" Bd", "");
 	    		            prop9bed = Integer.parseInt(bed9);
 				            desclist.add(prop9bed);
 	            	    }
@@ -470,13 +470,13 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property10_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property10bed));
 	    		            bed10 = property10_bed.getText(); 
-	    		            bed10=bed10.replaceAll(" bd", "");
+	    		            bed10=bed10.replaceAll(" Bd", "");
 	    		            prop10bed = Integer.parseInt(bed10);
 				            desclist.add(prop10bed);
 	            	    }
 
-				    String original = bed1+", "+bed2+", "+bed3+", "+bed4+", "+bed5+", "+bed6+", "+bed7+", "+bed8+", "+bed9+", "+bed10;
-				    original = original.replace(", , ", ", ");
+				    String original = "["+bed1+" "+bed2+" "+bed3+" "+bed4+" "+bed5+" "+bed6+" "+bed7+" "+bed8+" "+bed9+" "+bed10+"]";
+				    //original = original.replace(", , ", ", ");
 				         
 		            MiscMethods.sortDescending(desclist);
 		            String sorteddesc = MiscMethods.returnsStringforIntegerArrayList(desclist);
@@ -538,7 +538,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property1_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property1bed));
         		            bed1 = property1_bed.getText(); 
-        		            bed1=bed1.replaceAll(" bd", "");
+        		            bed1=bed1.replaceAll(" Bd", "");
         		            prop1bed = Integer.parseInt(bed1);
     			            asclist.add(prop1bed);
 	            	    }
@@ -555,7 +555,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property2_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property2bed));
         		            bed2 = property2_bed.getText(); 
-        		            bed2=bed2.replaceAll(" bd", "");
+        		            bed2=bed2.replaceAll(" Bd", "");
         		            prop2bed = Integer.parseInt(bed2);
     			            asclist.add(prop2bed);
 	            	    }
@@ -572,7 +572,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property3_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property3bed));
         		            bed3 = property3_bed.getText(); 
-        		            bed3=bed3.replaceAll(" bd", "");
+        		            bed3=bed3.replaceAll(" Bd", "");
         		            prop3bed = Integer.parseInt(bed3);
     			            asclist.add(prop3bed);
 	            	    }
@@ -589,7 +589,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property4_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property4bed));
         		            bed4 = property4_bed.getText(); 
-        		            bed4=bed4.replaceAll(" bd", "");
+        		            bed4=bed4.replaceAll(" Bd", "");
         		            prop4bed = Integer.parseInt(bed4);
     			            asclist.add(prop4bed);
 	            	    }	            	    
@@ -606,7 +606,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property5_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property5bed));
         		            bed5 = property5_bed.getText(); 
-        		            bed5=bed5.replaceAll(" bd", "");
+        		            bed5=bed5.replaceAll(" Bd", "");
         		            prop5bed = Integer.parseInt(bed5);
     			            asclist.add(prop5bed);
 	            	    }
@@ -623,7 +623,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property6_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property6bed));
         		            bed6 = property6_bed.getText(); 
-        		            bed6=bed6.replaceAll(" bd", "");
+        		            bed6=bed6.replaceAll(" Bd", "");
         		            prop6bed = Integer.parseInt(bed6);
     			            asclist.add(prop6bed);
 	            	    }
@@ -640,7 +640,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property7_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property7bed));
         		            bed7 = property7_bed.getText(); 
-        		            bed7=bed7.replaceAll(" bd", "");
+        		            bed7=bed7.replaceAll(" Bd", "");
         		            prop7bed = Integer.parseInt(bed7);
     			            asclist.add(prop7bed);
 	            	    }
@@ -657,7 +657,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property8_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property8bed));
         		            bed8 = property8_bed.getText(); 
-        		            bed8=bed8.replaceAll(" bd", "");
+        		            bed8=bed8.replaceAll(" Bd", "");
         		            prop8bed = Integer.parseInt(bed8);
     			            asclist.add(prop8bed);
 	            	    }
@@ -674,7 +674,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property9_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property9bed));
         		            bed9 = property9_bed.getText(); 
-        		            bed9=bed9.replaceAll(" bd", "");
+        		            bed9=bed9.replaceAll(" Bd", "");
         		            prop9bed = Integer.parseInt(bed9);
     			            asclist.add(prop9bed);
 	            	    }
@@ -691,13 +691,13 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property10_bed = wait.until(ExpectedConditions.presenceOfElementLocated(property10bed));
         		            bed10 = property10_bed.getText(); 
-        		            bed10=bed10.replaceAll(" bd", "");
+        		            bed10=bed10.replaceAll(" Bd", "");
         		            prop10bed = Integer.parseInt(bed10);
     			            asclist.add(prop10bed);
 	            	    }
 
-			        String original = bed1+", "+bed2+", "+bed3+", "+bed4+", "+bed5+", "+bed6+", "+bed7+", "+bed8+", "+bed9+", "+bed10;
-			        original = original.replace(", , ", ", ");
+			        String original = "["+bed1+" "+bed2+" "+bed3+" "+bed4+" "+bed5+" "+bed6+" "+bed7+" "+bed8+" "+bed9+" "+bed10+"]";
+			        //original = original.replace(", , ", ", ");
 			            
 		            MiscMethods.sortAscending(asclist);
 		            String sortedasc = MiscMethods.returnsStringforIntegerArrayList(asclist);
@@ -755,7 +755,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property1_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property1bath));
 	    		            bath1 = property1_bath.getText(); 
-	    		            bath1=bath1.replaceAll(" ba", "");
+	    		            bath1=bath1.replaceAll(" Ba", "");
 	    		            bath1=bath1.replaceAll(" Full/1 Half", "");
 	    		            bath1=bath1.replaceAll(" Full", "");
 	    		            prop1bath = Integer.parseInt(bath1);
@@ -774,7 +774,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property2_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property2bath));
 	    		            bath2 = property2_bath.getText(); 
-	    		            bath2=bath2.replaceAll(" ba", "");
+	    		            bath2=bath2.replaceAll(" Ba", "");
 	    		            bath2=bath2.replaceAll(" Full/1 Half", "");
 	    		            bath2=bath2.replaceAll(" Full", "");
 	    		            prop2bath = Integer.parseInt(bath2);
@@ -793,7 +793,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property3_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property3bath));
 	    		            bath3 = property3_bath.getText(); 
-	    		            bath3=bath3.replaceAll(" ba", "");
+	    		            bath3=bath3.replaceAll(" Ba", "");
 	    		            bath3=bath3.replaceAll(" Full/1 Half", "");
 	    		            bath3=bath3.replaceAll(" Full", "");
 	    		            prop3bath = Integer.parseInt(bath3);
@@ -812,7 +812,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property4_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property4bath));
 	    		            bath4 = property4_bath.getText(); 
-	    		            bath4=bath4.replaceAll(" ba", "");
+	    		            bath4=bath4.replaceAll(" Ba", "");
 	    		            bath4=bath4.replaceAll(" Full/1 Half", "");
 	    		            bath4=bath4.replaceAll(" Full", "");
 	    		            prop4bath = Integer.parseInt(bath4);
@@ -831,7 +831,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property5_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property5bath));
 	    		            bath5 = property5_bath.getText(); 
-	    		            bath5=bath5.replaceAll(" ba", "");
+	    		            bath5=bath5.replaceAll(" Ba", "");
 	    		            bath5=bath5.replaceAll(" Full/1 Half", "");
 	    		            bath5=bath5.replaceAll(" Full", "");
 	    		            prop5bath = Integer.parseInt(bath5);
@@ -850,7 +850,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property6_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property6bath));
 	    		            bath6 = property6_bath.getText(); 
-	    		            bath6=bath6.replaceAll(" ba", "");
+	    		            bath6=bath6.replaceAll(" Ba", "");
 	    		            bath6=bath6.replaceAll(" Full/1 Half", "");
 	    		            bath6=bath6.replaceAll(" Full", "");
 	    		            prop6bath = Integer.parseInt(bath6);
@@ -869,7 +869,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property7_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property7bath));
 	    		            bath7 = property7_bath.getText(); 
-	    		            bath7=bath7.replaceAll(" ba", "");
+	    		            bath7=bath7.replaceAll(" Ba", "");
 	    		            bath7=bath7.replaceAll(" Full/1 Half", "");
 	    		            bath7=bath7.replaceAll(" Full", "");
 	    		            prop7bath = Integer.parseInt(bath7);
@@ -888,7 +888,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property8_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property8bath));
 	    		            bath8 = property8_bath.getText(); 
-	    		            bath8=bath8.replaceAll(" ba", "");
+	    		            bath8=bath8.replaceAll(" Ba", "");
 	    		            bath8=bath8.replaceAll(" Full/1 Half", "");
 	    		            bath8=bath8.replaceAll(" Full", "");
 	    		            prop8bath = Integer.parseInt(bath8);
@@ -907,7 +907,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property9_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property9bath));
 	    		            bath9 = property9_bath.getText(); 
-	    		            bath9=bath9.replaceAll(" ba", "");
+	    		            bath9=bath9.replaceAll(" Ba", "");
 	    		            bath9=bath9.replaceAll(" Full/1 Half", "");
 	    		            bath9=bath9.replaceAll(" Full", "");
 	    		            prop9bath = Integer.parseInt(bath9);
@@ -926,15 +926,15 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property10_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property10bath));
 	    		            bath10 = property10_bath.getText(); 
-	    		            bath10=bath10.replaceAll(" ba", "");
+	    		            bath10=bath10.replaceAll(" Ba", "");
 	    		            bath10=bath10.replaceAll(" Full/1 Half", "");
 	    		            bath10=bath10.replaceAll(" Full", "");
 	    		            prop10bath = Integer.parseInt(bath10);
 	    		            desclist.add(prop10bath);
 	            	    }
 
-			        String original = bath1+", "+bath2+", "+bath3+", "+bath4+", "+bath5+", "+bath6+", "+bath7+", "+bath8+", "+bath9+", "+bath10;
-			        original = original.replace(", , ", ", ");
+			        String original = "["+bath1+" "+bath2+" "+bath3+" "+bath4+" "+bath5+" "+bath6+" "+bath7+" "+bath8+" "+bath9+" "+bath10+"]";
+			        //original = original.replace(", , ", ", ");
 			            
 		            MiscMethods.sortDescending(desclist);
 		            String sorteddesc = MiscMethods.returnsStringforIntegerArrayList(desclist);
@@ -997,7 +997,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property1_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property1bath));
         		            bath1 = property1_bath.getText(); 
-        		            bath1=bath1.replaceAll(" ba", "");
+        		            bath1=bath1.replaceAll(" Ba", "");
         		            bath1=bath1.replaceAll(" Full/1 Half", "");
         		            bath1=bath1.replaceAll(" Full", "");
         		            prop1bath = Integer.parseInt(bath1);
@@ -1016,7 +1016,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property2_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property2bath));
         		            bath2 = property2_bath.getText(); 
-        		            bath2=bath2.replaceAll(" ba", "");
+        		            bath2=bath2.replaceAll(" Ba", "");
         		            bath2=bath2.replaceAll(" Full/1 Half", "");
         		            bath2=bath2.replaceAll(" Full", "");
         		            prop2bath = Integer.parseInt(bath2);
@@ -1035,7 +1035,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property3_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property3bath));
         		            bath3 = property3_bath.getText(); 
-        		            bath3=bath3.replaceAll(" ba", "");
+        		            bath3=bath3.replaceAll(" Ba", "");
         		            bath3=bath3.replaceAll(" Full/1 Half", "");
         		            bath3=bath3.replaceAll(" Full", "");
         		            prop3bath = Integer.parseInt(bath3);
@@ -1054,7 +1054,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property4_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property4bath));
         		            bath4 = property4_bath.getText(); 
-        		            bath4=bath4.replaceAll(" ba", "");
+        		            bath4=bath4.replaceAll(" Ba", "");
         		            bath4=bath4.replaceAll(" Full/1 Half", "");
         		            bath4=bath4.replaceAll(" Full", "");
         		            prop4bath = Integer.parseInt(bath4);
@@ -1073,7 +1073,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property5_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property5bath));
         		            bath5 = property5_bath.getText(); 
-        		            bath5=bath5.replaceAll(" ba", "");
+        		            bath5=bath5.replaceAll(" Ba", "");
         		            bath5=bath5.replaceAll(" Full/1 Half", "");
         		            bath5=bath5.replaceAll(" Full", "");
         		            prop5bath = Integer.parseInt(bath5);
@@ -1092,7 +1092,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property6_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property6bath));
         		            bath6 = property6_bath.getText(); 
-        		            bath6=bath6.replaceAll(" ba", "");
+        		            bath6=bath6.replaceAll(" Ba", "");
         		            bath6=bath6.replaceAll(" Full/1 Half", "");
         		            bath6=bath6.replaceAll(" Full", "");
         		            prop6bath = Integer.parseInt(bath6);
@@ -1111,7 +1111,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property7_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property7bath));
         		            bath7 = property7_bath.getText(); 
-        		            bath7=bath7.replaceAll(" ba", "");
+        		            bath7=bath7.replaceAll(" Ba", "");
         		            bath7=bath7.replaceAll(" Full/1 Half", "");
         		            bath7=bath7.replaceAll(" Full", "");
         		            prop7bath = Integer.parseInt(bath7);
@@ -1130,7 +1130,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property8_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property8bath));
         		            bath8 = property8_bath.getText(); 
-        		            bath8=bath8.replaceAll(" ba", "");
+        		            bath8=bath8.replaceAll(" Ba", "");
         		            bath8=bath8.replaceAll(" Full/1 Half", "");
         		            bath8=bath8.replaceAll(" Full", "");
         		            prop8bath = Integer.parseInt(bath8);
@@ -1149,7 +1149,7 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property9_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property9bath));
         		            bath9 = property9_bath.getText(); 
-        		            bath9=bath9.replaceAll(" ba", "");
+        		            bath9=bath9.replaceAll(" Ba", "");
         		            bath9=bath9.replaceAll(" Full/1 Half", "");
         		            bath9=bath9.replaceAll(" Full", "");
         		            prop9bath = Integer.parseInt(bath9);
@@ -1168,15 +1168,15 @@ public class SortResults_Page {
 	            	    {
 	            	    		WebElement property10_bath = wait.until(ExpectedConditions.presenceOfElementLocated(property10bath));
         		            bath10 = property10_bath.getText(); 
-        		            bath10=bath10.replaceAll(" ba", "");
+        		            bath10=bath10.replaceAll(" Ba", "");
         		            bath10=bath10.replaceAll(" Full/1 Half", "");
         		            bath10=bath10.replaceAll(" Full", "");
         		            prop10bath = Integer.parseInt(bath10);
         		            asclist.add(prop10bath);
 	            	    }
 
-		            String original = bath1+", "+bath2+", "+bath3+", "+bath4+", "+bath5+", "+bath6+", "+bath7+", "+bath8+", "+bath9+", "+bath10;
-		            original = original.replace(", , ", ", ");
+		            String original = "["+bath1+" "+bath2+" "+bath3+" "+bath4+" "+bath5+" "+bath6+" "+bath7+" "+bath8+" "+bath9+" "+bath10+"]";
+		            //original = original.replace(", , ", ", ");
 		            
 		            MiscMethods.sortAscending(asclist);
 		            String sortedasc = MiscMethods.returnsStringforIntegerArrayList(asclist);

@@ -43,20 +43,23 @@ public class SignUp_NewUser extends TestBase{
 				String signedupemail = signedupnewuser[0];
 				
 				try{
-					Assert.assertEquals(signedupnewuser[1], "AMY FOWLER");
+					Assert.assertEquals(signedupnewuser[1], "AUTOMATION TESTER");
+					log.info("Got signed up user is "+signedupnewuser[1]);
 				} 
 				catch(AssertionError e)
 				{ 
-					log.error("Didn't sign up AmyFowler.", e.getMessage());
-					errorname = "didntsignupAmyFowler";
+					log.error("Didn't sign up correct user.", e.getMessage());
+					errorname = "didntsignupcorrectuser";
 					ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 					softAssert.fail();
 				}
 					
 				String [] registrationemail = Gmail.checkRegisterEmail(webdriver, email, gmailpwd, gmailsearch);
 				
+				
 				try{
 					Assert.assertEquals(registrationemail[0], "Xome Inc.");
+					log.info("Got Xome Inc. registrationemail[0] is "+registrationemail[0]);
 				} 
 				catch(AssertionError e)
 				{ 
@@ -66,8 +69,11 @@ public class SignUp_NewUser extends TestBase{
 					softAssert.fail();
 				}
 
+	
+				
 				try{
 					Assert.assertEquals(registrationemail[1], "Welcome to Xome!");
+					log.info("Got Welcome to Xome! registrationemail[1] is "+registrationemail[1]);
 				} 
 				catch(AssertionError e)
 				{ 
@@ -77,12 +83,15 @@ public class SignUp_NewUser extends TestBase{
 					softAssert.fail();
 				}
 				
+
+			
 				String registrationemailtext = registrationemail[2]+"\n"+registrationemail[3];
 				log.info("Registrationemailtext is "+registrationemailtext);
+
   
 				try {
 					Assert.assertEquals(registrationemailtext, "Thank you for registering for Xome®.\n"+"Your username is: "+signedupemail);
-					
+					log.info("Got registrationemail[2]+registrationemail[3] is "+registrationemail[2]+"\n"+registrationemail[3]);
 					//Capture a picture of the email for backup, then delete the email to clean up for next test run.
 					picinfo="BackupCopyOfPassingRegistrationEmail";
 					ScreenshotURL.backupCopyScreenshot(webdriver, foldername, picinfo);

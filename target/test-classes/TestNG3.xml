@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XOME Suite" parallel="false" verbose="10">
+
+<listeners>
+    <listener class-name="common.TestListener" />
+</listeners>  
+    
+    
+<test name = "Subset of tests" preserve-order="true">
+	
+		<classes>
+		<class name="webTests.FilterMoreResultsByKeyword" />
+        	<class name="webTests.FilterMoreResultsBySquareFeet" />     	
+        	<class name="webTests.FilterMoreResultsByYear" />	
+
+		</classes>
+</test>
+</suite>

@@ -37,6 +37,7 @@ public class FilterMoreResultsByPropertyType extends TestBase{
 	{
 		Search.searchByCity(webdriver, searchkeyword);
 		FilterMoreResults_Page.clickOpenMoreFilters(webdriver);
+		FilterMoreResults_Page.scrollDownMoreFiltersPage(webdriver);
 		FilterMoreResults_Page.uncheckAllPropertyType(webdriver);
 		FilterMoreResults_Page.filterByPropertyTypeLand(webdriver);
 		FilterMoreResults_Page.applyMoreFilters(webdriver);

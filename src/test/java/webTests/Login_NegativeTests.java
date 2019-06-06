@@ -31,7 +31,7 @@ public class Login_NegativeTests extends TestBase{
 	static String foldername = className+timestamp;
 	static String errorname = "";
 
-		
+
 	@Test(groups="P3", dataProvider = "getData")
 	public void loginBlankFields (String login, String password) throws IOException, InterruptedException
 	{
@@ -49,39 +49,12 @@ public class Login_NegativeTests extends TestBase{
 			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
 			softAssert.fail();
 		}
-	   
-		String emailisrequired2 = Login_Page.signinBlankEmail(webdriver, password);
-		
-		try
-		{
-			   Assert.assertEquals(emailisrequired2, "true");
-		}
-		catch(AssertionError e)
-		{ 
-			log.error("Didn't get required error message tip when signin with blank email.", e.getMessage());
-			errorname = "norequirederrmsgsigninwithblankemail";
-			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
-			softAssert.fail();
-		}
-		
-		
-		String wrongemailpwdtext2 = Login_Page.signinBlankPwd(webdriver, login);
-		
-		try
-		{
-			   Assert.assertEquals(wrongemailpwdtext2, "Oops, the e-mail or password doesn't match.");
-		}
-		catch(AssertionError e)
-		{ 
-			log.error("Didn't get wrong email password text when signin with blank pwd.", e.getMessage());
-			errorname = "nowrongemailpwdtextwhensigninwithblankpwd";
-			ScreenshotURL.screenshotURL(webdriver, foldername, errorname);
-			softAssert.fail();
-		}
+	 
 	   
 	   softAssert.assertAll();
 	   
 	}
+
 	
 	@Test(groups="regression", dataProvider = "getData")
 	public void loginWrongPwd (String login, String password) throws IOException, InterruptedException
@@ -92,6 +65,7 @@ public class Login_NegativeTests extends TestBase{
 	 
 		try
 		{
+			log.info(wrongpwdtextresults+" is displayed. We are looking for text: "+wrongpwdtext);
 			Assert.assertEquals(wrongpwdtextresults, wrongpwdtext);
 		}
 		catch(AssertionError e)

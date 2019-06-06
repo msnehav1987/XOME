@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="XOME Suite" parallel="false">
+
+
+<listeners>
+    <listener class-name="common.TestListener" />
+</listeners>  
+    
+
 <test name = "All Tests Run including Smoke and Regression" preserve-order="true">
 	<groups>
 		<run>

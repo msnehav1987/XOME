@@ -42,6 +42,8 @@ public class Search {
 		static By totalpics = By.xpath(".//span[@id='ltslide-total']");
 		static By picscrollrightbtn = By.cssSelector("i.fa.fa-angle-right");
 
+		static By searchbyaddressresult_address1= By.cssSelector("div.address-line-1.first-field.bolded");
+		static By searchbyaddressresult_address2= By.cssSelector("div.address-line-2.second-field");
 		
 	    public static void searchByCity (WebDriver webdriver, String searchkeyword)
 	    {
@@ -147,38 +149,18 @@ public class Search {
                 
         }
 	    
-	    
-	    public static String verifyAddressandScrollPicsOnPropertyDetails (WebDriver webdriver, String address)
-	    {    
-		    Search.searchSpecificAddress(webdriver, address);
-	    	    WebDriverWait wait = new WebDriverWait (webdriver, 60);
-            WebElement address1_inhousepage = wait.until(ExpectedConditions.visibilityOfElementLocated(address1inhousepage));
-            WebElement address2_inhouspeage = wait.until(ExpectedConditions.visibilityOfElementLocated(address2inhousepage));
-            WebElement address3_inhouspeage = wait.until(ExpectedConditions.visibilityOfElementLocated(address3inhousepage));
-            WebElement address4_inhouspeage = wait.until(ExpectedConditions.visibilityOfElementLocated(address4inhousepage));
-            
-            String houseaddress1 = address1_inhousepage.getText();
-            String houseaddress2 = address2_inhouspeage.getText();
-            String houseaddress3 = address3_inhouspeage.getText();
-            String houseaddress4 = address4_inhouspeage.getText();
-            String houseaddress = houseaddress1+" "+houseaddress2+", "+houseaddress3+" "+houseaddress4;
-            
-            log.info("Address is: "+  address);
-            	log.info("House address is: "+ houseaddress);
-            	
-            	WebElement slidepicscount = wait.until(ExpectedConditions.presenceOfElementLocated(totalpics));
-            String count = slidepicscount.getText();
-            log.info("The pic count is: "+count);
-            
-            int picscount = Integer.parseInt(count);
-            
-            for (int i = 0; i<picscount; i++)
-            {
-            	    WebElement scrollright = wait.until(ExpectedConditions.elementToBeClickable(picscrollrightbtn));
-            	    scrollright.click();
-            }
-            
-            return houseaddress;
-	    }    
+	    public static String searchandVerifyAddressSearched(WebDriver webdriver, String address)
+	    {
+			Search.searchSpecificAddress(webdriver,address);
+			WebDriverWait wait = new WebDriverWait (webdriver, 60);
+			WebElement resultaddress1 = wait.until(ExpectedConditions.visibilityOfElementLocated(searchbyaddressresult_address1));
+			WebElement resultaddress2 = wait.until(ExpectedConditions.visibilityOfElementLocated(searchbyaddressresult_address2));
+			String address1=resultaddress1.getText();
+			String address2=resultaddress2.getText();
+			String resultaddress=address1+" "+address2;
+			log.info("resultaddress is: "+resultaddress);
+	    		return resultaddress;
+	    	
+	    }
 	    
 }
