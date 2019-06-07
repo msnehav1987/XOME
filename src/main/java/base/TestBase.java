@@ -177,7 +177,7 @@ public class TestBase {
 						
 						capabilities.setCapability("newCommandTimeout", 120);    
 						capabilities.setCapability("appPackage", "com.xome.android");
-						capabilities.setCapability("appActivity", "com.xome.android.ui.map.MapActivity2");
+						capabilities.setCapability("appActivity", "com.xome.android.feature.mapsearch.view.MapActivity2");
 						
 						runonrealdevice = "yes";
 

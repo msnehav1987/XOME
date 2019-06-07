@@ -42,9 +42,9 @@ public class MFilterResults_Page {
 		static By keywordfield = By.id("com.xome.android:id/keyword_search_edit_text");
 		static By applybtn = By.id("com.xome.android:id/apply");
 		
-		static By pendingtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'listing_summary_status') and @text='PENDING']");
-		static By    soldtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'listing_summary_status') and @text='SOLD']");
-		static By forsaletag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'listing_summary_status') and @text='FOR SALE']");
+		static By pendingtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='PENDING']");
+		static By    soldtag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='SOLD']");
+		static By forsaletag = By.xpath(".//android.widget.TextView[contains(@resource-id, 'com.xome.android:id/listing_summary_status') and @text='FOR SALE']");
 		static By propertybed = By.id("com.xome.android:id/listing_summary_bedrooms_textView");
 		static By propertybath = By.id("com.xome.android:id/listing_summary_bathrooms_textView");
 		static By propertysqft = By.id("com.xome.android:id/listing_summary_square_feet_textView");
@@ -728,8 +728,9 @@ public class MFilterResults_Page {
 		}
 		
 
-		public static String verifyPendingStatus (AppiumDriver<?> driver)
+		public static String verifyPendingStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
+			Thread.sleep(3000);
 			List<WebElement> pendinglist = (List<WebElement>) driver.findElements(pendingtag);
 			
 			WebElement prop1pendingelement = pendinglist.get(0);
@@ -755,8 +756,9 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifySoldStatus (AppiumDriver<?> driver)
+		public static String verifySoldStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
+			Thread.sleep(3000);
 			List<WebElement> soldlist = (List<WebElement>) driver.findElements(soldtag);
 			
 			WebElement prop1soldelement = soldlist.get(0);
@@ -782,8 +784,10 @@ public class MFilterResults_Page {
 			return diditfilter;
 		}
 		
-		public static String verifyForSaleStatus (AppiumDriver<?> driver)
+		public static String verifyForSaleStatus (AppiumDriver<?> driver) throws InterruptedException
 		{
+			Thread.sleep(3000);
+			
 			List<WebElement> activelist = (List<WebElement>) driver.findElements(forsaletag);
 			
 			WebElement prop1activeelement = activelist.get(0);

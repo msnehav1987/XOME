@@ -27,7 +27,7 @@
 			   <!-- <testFailureIgnore>true</testFailureIgnore> -->	
           			<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>src/test/resources/TestNG.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/TestNG2.xml</suiteXmlFile>
 					</suiteXmlFiles>				
         		</configuration>
 			</plugin>

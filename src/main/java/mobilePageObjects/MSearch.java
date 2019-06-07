@@ -12,7 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.TapOptions;
+import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
 public class MSearch {
@@ -27,7 +30,7 @@ public class MSearch {
 		static By searchfield2 = By.id("com.xome.android:id/suggest_search_bar");
 		static By searchfield2text = By.id("com.xome.android:id/etSuggest");
 		static By autosuggestion = By.xpath(".//android.widget.TextView[contains(@resource-id,'tvTitle') and @index='1']");
-		static By propertyaddress = By.id("listing_summary_address_textView");
+		static By propertyaddress = By.id("com.xome.android:id/listing_summary_address_textView");
 		static By propertyimage = By.className("android.widget.ImageView");
 		
 		static String diditfilter = "";
@@ -65,18 +68,21 @@ public class MSearch {
 				
 			WebElement property2 = addresslist.get(1);
 
-	        Dimension size = driver.manage().window().getSize();
-	        int starty = (int) (size.height * 0.8);
-	        int endy = (int) (size.height * 0.2);
-	        int startx = size.width / 2;
+	        //Dimension size = driver.manage().window().getSize();
+	        //int starty = (int) (size.height * 0.8);
+	        //int endy = (int) (size.height * 0.2);
+	        //int startx = size.width / 2;
 
-			new TouchAction(driver).longPress((LongPressOptions) property2).moveTo(PointOption.point(startx, endy)).release().perform();
-
+			//new TouchAction(driver).longPress((LongPressOptions) property2).moveTo(PointOption.point(startx, endy)).release().perform();
+	        AndroidTouchAction touch = new AndroidTouchAction (driver);
+	        touch.tap(TapOptions.tapOptions().withElement(ElementOption.element (property2))).perform ();
+	        
 			List <MobileElement> addresslist2 = (List<MobileElement>) driver.findElements(propertyaddress);
 			
 			WebElement property3b = addresslist2.get(2);
-			new TouchAction(driver).longPress((LongPressOptions) property3b).moveTo(PointOption.point(startx, endy)).release().perform();
-			
+			//new TouchAction(driver).longPress((LongPressOptions) property3b).moveTo(PointOption.point(startx, endy)).release().perform();
+	        touch.tap(TapOptions.tapOptions().withElement(ElementOption.element (property3b))).perform ();
+	        
 			List <MobileElement> addresslist3 = (List<MobileElement>) driver.findElements(propertyaddress);
 			String property4address = addresslist3.get(0).getText();
 			String property5address = addresslist3.get(1).getText();

@@ -18,13 +18,17 @@
 	</groups>
 	
 	  <classes>
-	  	<class name="mobileTests.MLoginandSearch" />
-	  	<class name="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" />
+
 	  	<class name="mobileTests.MFilterByBedBath" />
         <class name="mobileTests.MFilterByKeyword" />
         	<class name="mobileTests.MFilterByPendingSoldForSaleStatus" />
+        	<class name="mobileTests.MFilterByPropertyType" />
         	<class name="mobileTests.MFilterBySqFt" />
         	<class name="mobileTests.MFilterByYear" />
+        	<class name="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent" />
+        	<class name="mobileTests.MLoginandSearch" />
+        	<class name="mobileTests.MSignUp_NewUser" />
+        	
      </classes>
 
 </test>

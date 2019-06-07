@@ -1,147 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="18" passed="15">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="XOME Suite" duration-ms="567000" started-at="2019-06-06T17:36:44Z" finished-at="2019-06-06T17:46:11Z">
+  <suite name="XOME Suite" duration-ms="709870" started-at="2019-06-07T02:41:30Z" finished-at="2019-06-07T02:53:20Z">
     <groups>
       <group name="regression">
-        <method signature="FilterMoreResultsByKeyword.filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146]" name="filterResultsByKeyword" class="webTests.FilterMoreResultsByKeyword"/>
-        <method signature="FilterMoreResultsByPropertyType.filterResultsByPropertyTypeLand(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5]" name="filterResultsByPropertyTypeLand" class="webTests.FilterMoreResultsByPropertyType"/>
-        <method signature="FilterMoreResultsByResidentialOptions.filterByCondo(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="filterByCondo" class="webTests.FilterMoreResultsByResidentialOptions"/>
-        <method signature="FilterMoreResultsByResidentialOptions.filterBySingleFamily(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="filterBySingleFamily" class="webTests.FilterMoreResultsByResidentialOptions"/>
-        <method signature="FilterMoreResultsBySquareFeet.filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c]" name="filterResultsBySqFeet" class="webTests.FilterMoreResultsBySquareFeet"/>
-        <method signature="FilterMoreResultsByStatus.filterResultsByForSaleStatus(java.lang.String)[pri:3, instance:webTests.FilterMoreResultsByStatus@58a9760d]" name="filterResultsByForSaleStatus" class="webTests.FilterMoreResultsByStatus"/>
-        <method signature="FilterMoreResultsByStatus.filterResultsByPendingStatus(java.lang.String)[pri:1, instance:webTests.FilterMoreResultsByStatus@58a9760d]" name="filterResultsByPendingStatus" class="webTests.FilterMoreResultsByStatus"/>
-        <method signature="FilterMoreResultsByStatus.filterResultsBySoldStatus(java.lang.String)[pri:2, instance:webTests.FilterMoreResultsByStatus@58a9760d]" name="filterResultsBySoldStatus" class="webTests.FilterMoreResultsByStatus"/>
-        <method signature="FilterMoreResultsByYear.filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4]" name="filterResultsByYear" class="webTests.FilterMoreResultsByYear"/>
-        <method signature="Login_NegativeTests.loginWrongPwd(java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_NegativeTests@17f7cd29]" name="loginWrongPwd" class="webTests.Login_NegativeTests"/>
-        <method signature="Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7d8704ef]" name="loginSearch" class="webTests.Login_and_Search"/>
-        <method signature="SearchforSpecificProperty.searchSpecificProperty(java.lang.String)[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc]" name="searchSpecificProperty" class="webTests.SearchforSpecificProperty"/>
-        <method signature="SignUp_NegativeTests.signUpWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NegativeTests@158a8276]" name="signUpWithInvalidPassword" class="webTests.SignUp_NegativeTests"/>
-        <method signature="SignUp_NewUser.signUp_NewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b]" name="signUp_NewUser" class="webTests.SignUp_NewUser"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByBaths(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByBaths" class="webTests.SortResultsByPriceBedBath"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByBeds(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByBeds" class="webTests.SortResultsByPriceBedBath"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByMostRecent(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByMostRecent" class="webTests.SortResultsByPriceBedBath"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByPrice(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByPrice" class="webTests.SortResultsByPriceBedBath"/>
+        <method signature="MFilterByBedBath.mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="mFilterBath" class="mobileTests.MFilterByBedBath"/>
+        <method signature="MFilterByBedBath.mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="mFilterBed" class="mobileTests.MFilterByBedBath"/>
+        <method signature="MFilterByKeyword.mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@bccb269]" name="mFilterKeyword" class="mobileTests.MFilterByKeyword"/>
+        <method signature="MFilterByPendingSoldForSaleStatus.mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterForSale" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
+        <method signature="MFilterByPendingSoldForSaleStatus.mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterPending" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
+        <method signature="MFilterByPendingSoldForSaleStatus.mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterSold" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
+        <method signature="MFilterByPropertyType.mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterCondo" class="mobileTests.MFilterByPropertyType"/>
+        <method signature="MFilterByPropertyType.mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterSingleFamily" class="mobileTests.MFilterByPropertyType"/>
+        <method signature="MFilterByPropertyType.mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterTownHome" class="mobileTests.MFilterByPropertyType"/>
+        <method signature="MFilterBySqFt.mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef]" name="mFilterSqFt" class="mobileTests.MFilterBySqFt"/>
+        <method signature="MFilterByYear.mFilterYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByYear@13b6aecc]" name="mFilterYear" class="mobileTests.MFilterByYear"/>
+        <method signature="MLoginandSearch.mobileLoginAndSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b]" name="mobileLoginAndSearch" class="mobileTests.MLoginandSearch"/>
+        <method signature="MSignUp_NewUser.mSignUpNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f]" name="mSignUpNewUser" class="mobileTests.MSignUp_NewUser"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByBath(java.lang.String)[pri:2, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByBath" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByBed(java.lang.String)[pri:1, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByBed" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByHightoLowPrice(java.lang.String)[pri:4, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByHightoLowPrice" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByLowtoHighPrice(java.lang.String)[pri:3, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByLowtoHighPrice" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByMostRecent(java.lang.String)[pri:6, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByMostRecent" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortBySqFt(java.lang.String)[pri:5, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortBySqFt" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="FilterMoreResultsByKeyword.filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146]" name="filterResultsByKeyword" class="webTests.FilterMoreResultsByKeyword"/>
-        <method signature="FilterMoreResultsByPropertyType.filterResultsByPropertyTypeLand(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5]" name="filterResultsByPropertyTypeLand" class="webTests.FilterMoreResultsByPropertyType"/>
-        <method signature="FilterMoreResultsByResidentialOptions.filterByCondo(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="filterByCondo" class="webTests.FilterMoreResultsByResidentialOptions"/>
-        <method signature="FilterMoreResultsByResidentialOptions.filterBySingleFamily(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="filterBySingleFamily" class="webTests.FilterMoreResultsByResidentialOptions"/>
-        <method signature="FilterMoreResultsBySquareFeet.filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c]" name="filterResultsBySqFeet" class="webTests.FilterMoreResultsBySquareFeet"/>
-        <method signature="FilterMoreResultsByStatus.filterResultsByForSaleStatus(java.lang.String)[pri:3, instance:webTests.FilterMoreResultsByStatus@58a9760d]" name="filterResultsByForSaleStatus" class="webTests.FilterMoreResultsByStatus"/>
-        <method signature="FilterMoreResultsByStatus.filterResultsByPendingStatus(java.lang.String)[pri:1, instance:webTests.FilterMoreResultsByStatus@58a9760d]" name="filterResultsByPendingStatus" class="webTests.FilterMoreResultsByStatus"/>
-        <method signature="FilterMoreResultsByStatus.filterResultsBySoldStatus(java.lang.String)[pri:2, instance:webTests.FilterMoreResultsByStatus@58a9760d]" name="filterResultsBySoldStatus" class="webTests.FilterMoreResultsByStatus"/>
-        <method signature="FilterMoreResultsByYear.filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4]" name="filterResultsByYear" class="webTests.FilterMoreResultsByYear"/>
-        <method signature="Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7d8704ef]" name="loginSearch" class="webTests.Login_and_Search"/>
-        <method signature="SearchforSpecificProperty.searchSpecificProperty(java.lang.String)[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc]" name="searchSpecificProperty" class="webTests.SearchforSpecificProperty"/>
-        <method signature="SignUp_NewUser.signUp_NewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b]" name="signUp_NewUser" class="webTests.SignUp_NewUser"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByBaths(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByBaths" class="webTests.SortResultsByPriceBedBath"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByBeds(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByBeds" class="webTests.SortResultsByPriceBedBath"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByMostRecent(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByMostRecent" class="webTests.SortResultsByPriceBedBath"/>
-        <method signature="SortResultsByPriceBedBath.sortResultsByPrice(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByPrice" class="webTests.SortResultsByPriceBedBath"/>
+        <method signature="MFilterByBedBath.mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="mFilterBath" class="mobileTests.MFilterByBedBath"/>
+        <method signature="MFilterByBedBath.mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="mFilterBed" class="mobileTests.MFilterByBedBath"/>
+        <method signature="MFilterByKeyword.mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@bccb269]" name="mFilterKeyword" class="mobileTests.MFilterByKeyword"/>
+        <method signature="MFilterByPendingSoldForSaleStatus.mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterForSale" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
+        <method signature="MFilterByPendingSoldForSaleStatus.mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterPending" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
+        <method signature="MFilterByPendingSoldForSaleStatus.mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterSold" class="mobileTests.MFilterByPendingSoldForSaleStatus"/>
+        <method signature="MFilterByPropertyType.mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterCondo" class="mobileTests.MFilterByPropertyType"/>
+        <method signature="MFilterByPropertyType.mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterSingleFamily" class="mobileTests.MFilterByPropertyType"/>
+        <method signature="MFilterByPropertyType.mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterTownHome" class="mobileTests.MFilterByPropertyType"/>
+        <method signature="MFilterBySqFt.mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef]" name="mFilterSqFt" class="mobileTests.MFilterBySqFt"/>
+        <method signature="MFilterByYear.mFilterYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByYear@13b6aecc]" name="mFilterYear" class="mobileTests.MFilterByYear"/>
+        <method signature="MLoginandSearch.mobileLoginAndSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b]" name="mobileLoginAndSearch" class="mobileTests.MLoginandSearch"/>
+        <method signature="MSignUp_NewUser.mSignUpNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f]" name="mSignUpNewUser" class="mobileTests.MSignUp_NewUser"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByBath(java.lang.String)[pri:2, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByBath" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByBed(java.lang.String)[pri:1, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByBed" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByHightoLowPrice(java.lang.String)[pri:4, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByHightoLowPrice" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByLowtoHighPrice(java.lang.String)[pri:3, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByLowtoHighPrice" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortByMostRecent(java.lang.String)[pri:6, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortByMostRecent" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
+        <method signature="MSortResultsByBedBathPriceSqFtMostRecent.mSortBySqFt(java.lang.String)[pri:5, instance:mobileTests.MSortResultsByBedBathPriceSqFtMostRecent@158a8276]" name="mSortBySqFt" class="mobileTests.MSortResultsByBedBathPriceSqFtMostRecent"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="All Tests Run including Smoke and Regression" duration-ms="567000" started-at="2019-06-06T17:36:44Z" finished-at="2019-06-06T17:46:11Z">
-      <class name="webTests.FilterMoreResultsByPropertyType">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5]" name="Setup" is-config="true" duration-ms="5053" started-at="2019-06-06T17:42:02Z" finished-at="2019-06-06T17:42:07Z">
+    <test name="All Tests Run including Smoke and Regression" duration-ms="709870" started-at="2019-06-07T02:41:30Z" finished-at="2019-06-07T02:53:20Z">
+      <class name="mobileTests.MFilterByKeyword">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByKeyword@bccb269]" name="Setup" is-config="true" duration-ms="8165" started-at="2019-06-07T02:42:53Z" finished-at="2019-06-07T02:43:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="filterResultsByPropertyTypeLand(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5]" name="filterResultsByPropertyTypeLand" duration-ms="58623" started-at="2019-06-06T17:42:07Z" data-provider="getData" finished-at="2019-06-06T17:43:06Z">
+        <test-method status="PASS" signature="mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@bccb269]" name="mFilterKeyword" duration-ms="52619" started-at="2019-06-07T02:43:02Z" data-provider="getMobileData" finished-at="2019-06-07T02:43:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Malibu, CA]]>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hardwood floor]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterResultsByPropertyTypeLand -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5]" name="tearDown" is-config="true" duration-ms="134" started-at="2019-06-06T17:43:06Z" finished-at="2019-06-06T17:43:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:43:06Z" finished-at="2019-06-06T17:43:06Z">
+        </test-method> <!-- mFilterKeyword -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByKeyword@bccb269]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:43:54Z" finished-at="2019-06-07T02:43:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterResultsByPropertyTypeLand status=SUCCESS method=FilterMoreResultsByPropertyType.filterResultsByPropertyTypeLand(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByPropertyType@1e66f1f5] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterKeyword status=SUCCESS method=MFilterByKeyword.mFilterKeyword(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByKeyword@bccb269] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-      </class> <!-- webTests.FilterMoreResultsByPropertyType -->
-      <class name="webTests.SortResultsByPriceBedBath">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="Setup" is-config="true" duration-ms="5181" started-at="2019-06-06T17:39:05Z" finished-at="2019-06-06T17:39:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByKeyword@bccb269]" name="tearDown" is-config="true" duration-ms="1015" started-at="2019-06-07T02:43:54Z" finished-at="2019-06-07T02:43:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mobileTests.MFilterByKeyword -->
+      <class name="mobileTests.MFilterByBedBath">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="Setup" is-config="true" duration-ms="9611" started-at="2019-06-07T02:41:31Z" finished-at="2019-06-07T02:41:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="sortResultsByBaths(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByBaths" duration-ms="28144" started-at="2019-06-06T17:39:10Z" data-provider="getData" finished-at="2019-06-06T17:39:38Z">
+        <test-method status="PASS" signature="mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="mFilterBath" duration-ms="30485" started-at="2019-06-07T02:41:40Z" data-provider="getMobileData" finished-at="2019-06-07T02:42:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[San Marino, CA]]>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortResultsByBaths -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="tearDown" is-config="true" duration-ms="99" started-at="2019-06-06T17:39:38Z" finished-at="2019-06-06T17:39:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:39:38Z" finished-at="2019-06-06T17:39:38Z">
+        </test-method> <!-- mFilterBath -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-07T02:42:11Z" finished-at="2019-06-07T02:42:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sortResultsByBaths status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByBaths(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterBath status=SUCCESS method=MFilterByBedBath.mFilterBath(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="Setup" is-config="true" duration-ms="4880" started-at="2019-06-06T17:39:38Z" finished-at="2019-06-06T17:39:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="tearDown" is-config="true" duration-ms="805" started-at="2019-06-07T02:42:11Z" finished-at="2019-06-07T02:42:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="Setup" is-config="true" duration-ms="8279" started-at="2019-06-07T02:42:12Z" finished-at="2019-06-07T02:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="sortResultsByBeds(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByBeds" duration-ms="28592" started-at="2019-06-06T17:39:43Z" data-provider="getData" finished-at="2019-06-06T17:40:12Z">
+        <test-method status="PASS" signature="mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="mFilterBed" duration-ms="32404" started-at="2019-06-07T02:42:20Z" data-provider="getMobileData" finished-at="2019-06-07T02:42:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Milpitas, CA]]>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortResultsByBeds -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-06T17:40:12Z" finished-at="2019-06-06T17:40:12Z">
+        </test-method> <!-- mFilterBed -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:42:53Z" finished-at="2019-06-07T02:42:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sortResultsByBeds status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByBeds(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterBed status=SUCCESS method=MFilterByBedBath.mFilterBed(java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByBedBath@66d18979] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="tearDown" is-config="true" duration-ms="102" started-at="2019-06-06T17:40:12Z" finished-at="2019-06-06T17:40:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByBedBath@66d18979]" name="tearDown" is-config="true" duration-ms="928" started-at="2019-06-07T02:42:53Z" finished-at="2019-06-07T02:42:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="Setup" is-config="true" duration-ms="5191" started-at="2019-06-06T17:40:12Z" finished-at="2019-06-06T17:40:17Z">
+      </class> <!-- mobileTests.MFilterByBedBath -->
+      <class name="mobileTests.MFilterByPropertyType">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="Setup" is-config="true" duration-ms="8189" started-at="2019-06-07T02:46:10Z" finished-at="2019-06-07T02:46:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="sortResultsByMostRecent(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByMostRecent" duration-ms="21051" started-at="2019-06-06T17:40:17Z" data-provider="getData" finished-at="2019-06-06T17:40:38Z">
+        <test-method status="PASS" signature="mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterCondo" duration-ms="52514" started-at="2019-06-07T02:46:18Z" data-provider="getMobileData" finished-at="2019-06-07T02:47:10Z">
           <params>
             <param index="0">
               <value>
@@ -151,27 +172,27 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortResultsByMostRecent -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:40:38Z" finished-at="2019-06-06T17:40:38Z">
+        </test-method> <!-- mFilterCondo -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:47:10Z" finished-at="2019-06-07T02:47:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sortResultsByMostRecent status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByMostRecent(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterCondo status=SUCCESS method=MFilterByPropertyType.mFilterCondo(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="tearDown" is-config="true" duration-ms="99" started-at="2019-06-06T17:40:38Z" finished-at="2019-06-06T17:40:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="tearDown" is-config="true" duration-ms="839" started-at="2019-06-07T02:47:10Z" finished-at="2019-06-07T02:47:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="Setup" is-config="true" duration-ms="5450" started-at="2019-06-06T17:40:38Z" finished-at="2019-06-06T17:40:44Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="Setup" is-config="true" duration-ms="9759" started-at="2019-06-07T02:47:11Z" finished-at="2019-06-07T02:47:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="sortResultsByPrice(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="sortResultsByPrice" duration-ms="26378" started-at="2019-06-06T17:40:44Z" data-provider="getData" finished-at="2019-06-06T17:41:10Z">
+        <test-method status="PASS" signature="mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterSingleFamily" duration-ms="52355" started-at="2019-06-07T02:47:21Z" data-provider="getMobileData" finished-at="2019-06-07T02:48:13Z">
           <params>
             <param index="0">
               <value>
@@ -181,207 +202,59 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortResultsByPrice -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:41:10Z" finished-at="2019-06-06T17:41:10Z">
+        </test-method> <!-- mFilterSingleFamily -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:48:13Z" finished-at="2019-06-07T02:48:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sortResultsByPrice status=SUCCESS method=SortResultsByPriceBedBath.sortResultsByPrice(java.lang.String)[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterSingleFamily status=SUCCESS method=MFilterByPropertyType.mFilterSingleFamily(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SortResultsByPriceBedBath@79d8407f]" name="tearDown" is-config="true" duration-ms="100" started-at="2019-06-06T17:41:10Z" finished-at="2019-06-06T17:41:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="tearDown" is-config="true" duration-ms="957" started-at="2019-06-07T02:48:13Z" finished-at="2019-06-07T02:48:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- webTests.SortResultsByPriceBedBath -->
-      <class name="webTests.Login_NegativeTests">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.Login_NegativeTests@17f7cd29]" name="Setup" is-config="true" duration-ms="5316" started-at="2019-06-06T17:36:44Z" finished-at="2019-06-06T17:36:50Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="Setup" is-config="true" duration-ms="8021" started-at="2019-06-07T02:48:14Z" finished-at="2019-06-07T02:48:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="loginWrongPwd(java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_NegativeTests@17f7cd29]" name="loginWrongPwd" duration-ms="6932" started-at="2019-06-06T17:36:50Z" data-provider="getData" finished-at="2019-06-06T17:36:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sqatester2018@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Automation123#a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWrongPwd -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.Login_NegativeTests@17f7cd29]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-06T17:36:56Z" finished-at="2019-06-06T17:36:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginWrongPwd status=SUCCESS method=Login_NegativeTests.loginWrongPwd(java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_NegativeTests@17f7cd29] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.Login_NegativeTests@17f7cd29]" name="tearDown" is-config="true" duration-ms="93" started-at="2019-06-06T17:36:56Z" finished-at="2019-06-06T17:36:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.Login_NegativeTests -->
-      <class name="webTests.SignUp_NewUser">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b]" name="Setup" is-config="true" duration-ms="4974" started-at="2019-06-06T17:37:35Z" finished-at="2019-06-06T17:37:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="signUp_NewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b]" name="signUp_NewUser" duration-ms="84062" started-at="2019-06-06T17:37:40Z" data-provider="getData" finished-at="2019-06-06T17:39:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AUTOMATION]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[TESTER]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[sqatester2018@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Automation123#]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Pip3Pytest$]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Welcome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp_NewUser -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-06T17:39:04Z" finished-at="2019-06-06T17:39:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUp_NewUser status=SUCCESS method=SignUp_NewUser.signUp_NewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SignUp_NewUser@3c3d9b6b]" name="tearDown" is-config="true" duration-ms="140" started-at="2019-06-06T17:39:04Z" finished-at="2019-06-06T17:39:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.SignUp_NewUser -->
-      <class name="webTests.SignUp_NegativeTests">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SignUp_NegativeTests@158a8276]" name="Setup" is-config="true" duration-ms="4967" started-at="2019-06-06T17:37:27Z" finished-at="2019-06-06T17:37:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="signUpWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NegativeTests@158a8276]" name="signUpWithInvalidPassword" duration-ms="3069" started-at="2019-06-06T17:37:32Z" data-provider="getData" finished-at="2019-06-06T17:37:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[sqatester2018@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Ab1#]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpWithInvalidPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SignUp_NegativeTests@158a8276]" name="tearDown" is-config="true" duration-ms="90" started-at="2019-06-06T17:37:35Z" finished-at="2019-06-06T17:37:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SignUp_NegativeTests@158a8276]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:37:35Z" finished-at="2019-06-06T17:37:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signUpWithInvalidPassword status=SUCCESS method=SignUp_NegativeTests.signUpWithInvalidPassword(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.SignUp_NegativeTests@158a8276] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-      </class> <!-- webTests.SignUp_NegativeTests -->
-      <class name="webTests.FilterMoreResultsByKeyword">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146]" name="Setup" is-config="true" duration-ms="5077" started-at="2019-06-06T17:41:10Z" finished-at="2019-06-06T17:41:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146]" name="filterResultsByKeyword" duration-ms="46897" started-at="2019-06-06T17:41:15Z" data-provider="getData" finished-at="2019-06-06T17:42:02Z">
+        <test-method status="PASS" signature="mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="mFilterTownHome" duration-ms="51936" started-at="2019-06-07T02:48:22Z" data-provider="getMobileData" finished-at="2019-06-07T02:49:14Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[Irvine, CA]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[master bedroom]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterResultsByKeyword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146]" name="tearDown" is-config="true" duration-ms="140" started-at="2019-06-06T17:42:02Z" finished-at="2019-06-06T17:42:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:42:02Z" finished-at="2019-06-06T17:42:02Z">
+        </test-method> <!-- mFilterTownHome -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-07T02:49:14Z" finished-at="2019-06-07T02:49:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterResultsByKeyword status=SUCCESS method=FilterMoreResultsByKeyword.filterResultsByKeyword(java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByKeyword@5fbe4146] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterTownHome status=SUCCESS method=MFilterByPropertyType.mFilterTownHome(java.lang.String)[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-      </class> <!-- webTests.FilterMoreResultsByKeyword -->
-      <class name="webTests.Login_and_Search">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.Login_and_Search@7d8704ef]" name="Setup" is-config="true" duration-ms="4769" started-at="2019-06-06T17:36:57Z" finished-at="2019-06-06T17:37:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPropertyType@17f7cd29]" name="tearDown" is-config="true" duration-ms="1035" started-at="2019-06-07T02:49:14Z" finished-at="2019-06-07T02:49:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mobileTests.MFilterByPropertyType -->
+      <class name="mobileTests.MLoginandSearch">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b]" name="Setup" is-config="true" duration-ms="8068" started-at="2019-06-07T02:51:42Z" finished-at="2019-06-07T02:51:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7d8704ef]" name="loginSearch" duration-ms="16920" started-at="2019-06-06T17:37:01Z" data-provider="getData" finished-at="2019-06-06T17:37:18Z">
+        <test-method status="PASS" signature="mobileLoginAndSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b]" name="mobileLoginAndSearch" duration-ms="44981" started-at="2019-06-07T02:51:50Z" data-provider="getMobileData" finished-at="2019-06-07T02:52:35Z">
           <params>
             <param index="0">
               <value>
@@ -401,29 +274,121 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSearch -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.Login_and_Search@7d8704ef]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:37:18Z" finished-at="2019-06-06T17:37:18Z">
+        </test-method> <!-- mobileLoginAndSearch -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-07T02:52:35Z" finished-at="2019-06-07T02:52:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginSearch status=SUCCESS method=Login_and_Search.loginSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.Login_and_Search@7d8704ef] output={null}]]]>
+                <![CDATA[[TestResult name=mobileLoginAndSearch status=SUCCESS method=MLoginandSearch.mobileLoginAndSearch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.Login_and_Search@7d8704ef]" name="tearDown" is-config="true" duration-ms="126" started-at="2019-06-06T17:37:18Z" finished-at="2019-06-06T17:37:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MLoginandSearch@3c3d9b6b]" name="tearDown" is-config="true" duration-ms="1057" started-at="2019-06-07T02:52:35Z" finished-at="2019-06-07T02:52:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- webTests.Login_and_Search -->
-      <class name="webTests.FilterMoreResultsBySquareFeet">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c]" name="Setup" is-config="true" duration-ms="5083" started-at="2019-06-06T17:44:46Z" finished-at="2019-06-06T17:44:51Z">
+      </class> <!-- mobileTests.MLoginandSearch -->
+      <class name="mobileTests.MFilterByPendingSoldForSaleStatus">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="Setup" is-config="true" duration-ms="8176" started-at="2019-06-07T02:43:55Z" finished-at="2019-06-07T02:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c]" name="filterResultsBySqFeet" duration-ms="21996" started-at="2019-06-06T17:44:51Z" data-provider="getData" finished-at="2019-06-06T17:45:13Z">
+        <test-method status="PASS" signature="mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterForSale" duration-ms="35768" started-at="2019-06-07T02:44:04Z" data-provider="getMobileData" finished-at="2019-06-07T02:44:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mFilterForSale -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="tearDown" is-config="true" duration-ms="1269" started-at="2019-06-07T02:44:39Z" finished-at="2019-06-07T02:44:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:44:39Z" finished-at="2019-06-07T02:44:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mFilterForSale status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterForSale(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="Setup" is-config="true" duration-ms="7969" started-at="2019-06-07T02:44:41Z" finished-at="2019-06-07T02:44:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterPending" duration-ms="34787" started-at="2019-06-07T02:44:49Z" data-provider="getMobileData" finished-at="2019-06-07T02:45:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mFilterPending -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="tearDown" is-config="true" duration-ms="1132" started-at="2019-06-07T02:45:23Z" finished-at="2019-06-07T02:45:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:45:23Z" finished-at="2019-06-07T02:45:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mFilterPending status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterPending(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="Setup" is-config="true" duration-ms="8196" started-at="2019-06-07T02:45:25Z" finished-at="2019-06-07T02:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="mFilterSold" duration-ms="35539" started-at="2019-06-07T02:45:33Z" data-provider="getMobileData" finished-at="2019-06-07T02:46:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mFilterSold -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:46:08Z" finished-at="2019-06-07T02:46:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mFilterSold status=SUCCESS method=MFilterByPendingSoldForSaleStatus.mFilterSold(java.lang.String)[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByPendingSoldForSaleStatus@609cd4d8]" name="tearDown" is-config="true" duration-ms="1280" started-at="2019-06-07T02:46:08Z" finished-at="2019-06-07T02:46:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mobileTests.MFilterByPendingSoldForSaleStatus -->
+      <class name="mobileTests.MFilterBySqFt">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef]" name="Setup" is-config="true" duration-ms="8128" started-at="2019-06-07T02:49:15Z" finished-at="2019-06-07T02:49:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef]" name="mFilterSqFt" duration-ms="40814" started-at="2019-06-07T02:49:23Z" data-provider="getMobileData" finished-at="2019-06-07T02:50:04Z">
           <params>
             <param index="0">
               <value>
@@ -432,170 +397,123 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[750]]>
+                <![CDATA[1500]]>
               </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[1000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filterResultsBySqFeet -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:45:13Z" finished-at="2019-06-06T17:45:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=filterResultsBySqFeet status=SUCCESS method=FilterMoreResultsBySquareFeet.filterResultsBySqFeet(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsBySquareFeet@7530ad9c]" name="tearDown" is-config="true" duration-ms="100" started-at="2019-06-06T17:45:13Z" finished-at="2019-06-06T17:45:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.FilterMoreResultsBySquareFeet -->
-      <class name="webTests.SearchforSpecificProperty">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc]" name="Setup" is-config="true" duration-ms="4973" started-at="2019-06-06T17:37:18Z" finished-at="2019-06-06T17:37:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="searchSpecificProperty(java.lang.String)[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc]" name="searchSpecificProperty" duration-ms="3648" started-at="2019-06-06T17:37:23Z" data-provider="getData" finished-at="2019-06-06T17:37:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12512 Brighton Pl Tustin, CA 92780]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSpecificProperty -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:37:27Z" finished-at="2019-06-06T17:37:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchSpecificProperty status=SUCCESS method=SearchforSpecificProperty.searchSpecificProperty(java.lang.String)[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.SearchforSpecificProperty@13b6aecc]" name="tearDown" is-config="true" duration-ms="93" started-at="2019-06-06T17:37:27Z" finished-at="2019-06-06T17:37:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.SearchforSpecificProperty -->
-      <class name="webTests.FilterMoreResultsByYear">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4]" name="Setup" is-config="true" duration-ms="5136" started-at="2019-06-06T17:45:13Z" finished-at="2019-06-06T17:45:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4]" name="filterResultsByYear" duration-ms="52184" started-at="2019-06-06T17:45:18Z" data-provider="getData" finished-at="2019-06-06T17:46:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Irvine, CA]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[2000]]>
               </value>
             </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mFilterSqFt -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:50:04Z" finished-at="2019-06-07T02:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mFilterSqFt status=SUCCESS method=MFilterBySqFt.mFilterSqFt(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterBySqFt@7d8704ef]" name="tearDown" is-config="true" duration-ms="1077" started-at="2019-06-07T02:50:04Z" finished-at="2019-06-07T02:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mobileTests.MFilterBySqFt -->
+      <class name="mobileTests.MSignUp_NewUser">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f]" name="Setup" is-config="true" duration-ms="8213" started-at="2019-06-07T02:52:36Z" finished-at="2019-06-07T02:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="mSignUpNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f]" name="mSignUpNewUser" duration-ms="34711" started-at="2019-06-07T02:52:45Z" data-provider="getMobileData" finished-at="2019-06-07T02:53:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Fowler]]>
+              </value>
+            </param>
             <param index="2">
               <value>
-                <![CDATA[2017]]>
+                <![CDATA[sqatester2018@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Automation123#]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterResultsByYear -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4]" name="tearDown" is-config="true" duration-ms="148" started-at="2019-06-06T17:46:11Z" finished-at="2019-06-06T17:46:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:46:11Z" finished-at="2019-06-06T17:46:11Z">
+        </test-method> <!-- mSignUpNewUser -->
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f]" name="OnFailure" is-config="true" duration-ms="1" started-at="2019-06-07T02:53:19Z" finished-at="2019-06-07T02:53:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterResultsByYear status=SUCCESS method=FilterMoreResultsByYear.filterResultsByYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByYear@71e9ddb4] output={null}]]]>
+                <![CDATA[[TestResult name=mSignUpNewUser status=SUCCESS method=MSignUp_NewUser.mSignUpNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-      </class> <!-- webTests.FilterMoreResultsByYear -->
-      <class name="webTests.FilterMoreResultsByResidentialOptions">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="Setup" is-config="true" duration-ms="5976" started-at="2019-06-06T17:43:06Z" finished-at="2019-06-06T17:43:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MSignUp_NewUser@79d8407f]" name="tearDown" is-config="true" duration-ms="1015" started-at="2019-06-07T02:53:19Z" finished-at="2019-06-07T02:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mobileTests.MSignUp_NewUser -->
+      <class name="mobileTests.MFilterByYear">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:mobileTests.MFilterByYear@13b6aecc]" name="Setup" is-config="true" duration-ms="8287" started-at="2019-06-07T02:50:05Z" finished-at="2019-06-07T02:50:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="filterByCondo(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="filterByCondo" duration-ms="43425" started-at="2019-06-06T17:43:12Z" data-provider="getData" finished-at="2019-06-06T17:43:55Z">
+        <test-method status="PASS" signature="mFilterYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByYear@13b6aecc]" name="mFilterYear" duration-ms="87545" started-at="2019-06-07T02:50:14Z" data-provider="getMobileData" finished-at="2019-06-07T02:51:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mission Viejo, CA]]>
+                <![CDATA[Irvine, CA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2015]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filterByCondo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="tearDown" is-config="true" duration-ms="139" started-at="2019-06-06T17:43:55Z" finished-at="2019-06-06T17:43:56Z">
+        </test-method> <!-- mFilterYear -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:mobileTests.MFilterByYear@13b6aecc]" name="tearDown" is-config="true" duration-ms="921" started-at="2019-06-07T02:51:41Z" finished-at="2019-06-07T02:51:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:43:55Z" finished-at="2019-06-06T17:43:55Z">
+        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:mobileTests.MFilterByYear@13b6aecc]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-07T02:51:41Z" finished-at="2019-06-07T02:51:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=filterByCondo status=SUCCESS method=FilterMoreResultsByResidentialOptions.filterByCondo(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791] output={null}]]]>
+                <![CDATA[[TestResult name=mFilterYear status=SUCCESS method=MFilterByYear.mFilterYear(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:mobileTests.MFilterByYear@13b6aecc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="Setup" is-config="true" duration-ms="5641" started-at="2019-06-06T17:43:56Z" finished-at="2019-06-06T17:44:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="filterBySingleFamily(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="filterBySingleFamily" duration-ms="44495" started-at="2019-06-06T17:44:01Z" data-provider="getData" finished-at="2019-06-06T17:44:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mission Viejo, CA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filterBySingleFamily -->
-        <test-method status="PASS" signature="OnFailure(org.testng.ITestResult)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="OnFailure" is-config="true" duration-ms="0" started-at="2019-06-06T17:44:46Z" finished-at="2019-06-06T17:44:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=filterBySingleFamily status=SUCCESS method=FilterMoreResultsByResidentialOptions.filterBySingleFamily(java.lang.String)[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OnFailure -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:webTests.FilterMoreResultsByResidentialOptions@4e50c791]" name="tearDown" is-config="true" duration-ms="140" started-at="2019-06-06T17:44:46Z" finished-at="2019-06-06T17:44:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- webTests.FilterMoreResultsByResidentialOptions -->
+      </class> <!-- mobileTests.MFilterByYear -->
     </test> <!-- All Tests Run including Smoke and Regression -->
   </suite> <!-- XOME Suite -->
 </testng-results>

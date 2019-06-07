@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" verbose="10" name="Subset of tests(failed)">
     <classes>
-      <class name="webTests.SignUp_NewUser">
+      <class name="mobileTests.MLoginandSearch">
         <methods>
-          <include name="signUp_NewUser" invocation-numbers="0"/>
+          <include name="mobileLoginAndSearch" invocation-numbers="0"/>
           <include name="OnFailure"/>
           <include name="Setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- webTests.SignUp_NewUser -->
+      </class> <!-- mobileTests.MLoginandSearch -->
     </classes>
   </test> <!-- Subset of tests(failed) -->
 </suite> <!-- Failed suite [XOME Suite] -->

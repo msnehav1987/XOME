@@ -1,162 +1,81 @@
-2019-06-06 10:30:00 [main] INFO  FilterMoreResults_Page:925 - verify filter keyword - first property has pic.
-2019-06-06 10:30:04 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:30:04 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:30:07 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:30:07 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:30:10 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:30:10 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:30:12 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:30:12 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:985 - search keyword: master bedroom
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:986 - prop1_description matches: yes
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:987 - prop2_description matches: yes
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:988 - prop3_description matches: yes
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:989 - prop4_description matches: yes
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:990 - prop5_description matches: yes
-2019-06-06 10:30:16 [main] INFO  FilterMoreResults_Page:995 - It filtered by keyword correctly
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:875 - max year 2017
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2010
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2015
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2007
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2017
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2005
-2019-06-06 10:31:10 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
-2019-06-06 10:33:40 [main] INFO  FilterMoreResults_Page:925 - verify filter keyword - first property has pic.
-2019-06-06 10:33:44 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:33:44 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:33:46 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:33:46 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:33:49 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:33:49 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:33:52 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:33:52 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:985 - search keyword: master bedroom
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:986 - prop1_description matches: yes
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:987 - prop2_description matches: yes
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:988 - prop3_description matches: yes
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:989 - prop4_description matches: yes
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:990 - prop5_description matches: yes
-2019-06-06 10:33:55 [main] INFO  FilterMoreResults_Page:995 - It filtered by keyword correctly
-2019-06-06 10:34:20 [main] INFO  FilterMoreResults_Page:566 - It filtered by square feet correctly
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:875 - max year 2017
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2010
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2015
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2007
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2017
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2005
-2019-06-06 10:35:15 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
-2019-06-06 10:36:56 [main] INFO  Login_Page:76 - Wrong password text is : Oops, the e-mail or password doesn't match.
-2019-06-06 10:36:56 [main] INFO  Login_NegativeTests:68 - Oops, the e-mail or password doesn't match. is displayed. We are looking for text: Oops, the e-mail or password doesn't match.
-2019-06-06 10:37:06 [main] INFO  Login_Page:105 - Signed in user name is: AUTOMATION TESTER
-2019-06-06 10:37:11 [main] INFO  Search:83 - First search results address is: 21 Paperbark Irvine, CA
-2019-06-06 10:37:11 [main] INFO  Search:87 - Scrolled.
-2019-06-06 10:37:11 [main] INFO  Search:96 - addressafterscroll: 12 Westport Irvine, CA
-2019-06-06 10:37:15 [main] INFO  Search:117 - The house address is: 12 Westport Irvine, CA
-2019-06-06 10:37:15 [main] INFO  Search:122 - The pic count is: 33
-2019-06-06 10:37:27 [main] INFO  Search:161 - resultaddress is: 12512 Brighton Pl Tustin, CA 92780
-2019-06-06 10:37:35 [main] INFO  SignUp_Page:263 - Got password requirement message: Password Requirements - at least 8 characters
-2019-06-06 10:37:43 [main] INFO  SignUp_Page:294 - sqatester2018+06062019103743@gmail.com
-2019-06-06 10:37:46 [main] INFO  SignUp_Page:314 - Signed up user name is: AUTOMATION TESTER
-2019-06-06 10:37:46 [main] INFO  SignUp_NewUser:47 - Got signed up user is AUTOMATION TESTER
-2019-06-06 10:37:50 [main] INFO  Gmail:76 - Wait 60secs before searching for email.
-2019-06-06 10:38:56 [main] INFO  SignUp_NewUser:62 - Got Xome Inc. registrationemail[0] is Xome Inc.
-2019-06-06 10:38:56 [main] INFO  SignUp_NewUser:76 - Got Welcome to Xome! registrationemail[1] is Welcome to Xome!
-2019-06-06 10:38:56 [main] INFO  SignUp_NewUser:89 - Registrationemailtext is Thank you for registering for Xome®.
-Your username is: sqatester2018+06062019103743@gmail.com
-2019-06-06 10:38:56 [main] INFO  SignUp_NewUser:94 - Got registrationemail[2]+registrationemail[3] is Thank you for registering for Xome®.
-Your username is: sqatester2018+06062019103743@gmail.com
-2019-06-06 10:38:58 [main] INFO  Gmail:155 - Scroll up to height of window.
-2019-06-06 10:39:01 [main] INFO  Gmail:161 - Found three dots menu.
-2019-06-06 10:39:01 [main] INFO  Gmail:176 - Clicked delete this message link without arrowing down.
-2019-06-06 10:39:02 [main] INFO  Gmail:190 - Click delete option from three dots dropdown menu.
-2019-06-06 10:39:03 [main] INFO  Gmail:203 - Found side bar expand more button link.
-2019-06-06 10:39:04 [main] INFO  Gmail:219 - Scrolled down and found trash link after expanding more button on the sidebar.
-2019-06-06 10:39:04 [main] INFO  Gmail:231 - Click empty trash now link.
-2019-06-06 10:39:04 [main] INFO  Gmail:242 - Click empty trash now ok button.
-2019-06-06 10:39:25 [main] INFO  SortResults_Page:943 - Original order is: [8 8 8 7 7 7 6 6 6 6]
 
-2019-06-06 10:39:25 [main] INFO  SortResults_Page:944 - Sorted descending order is: [8 8 8 7 7 7 6 6 6 6]
-
-2019-06-06 10:39:25 [main] INFO  SortResults_Page:948 - It has sorted in descending order.
-2019-06-06 10:39:38 [main] INFO  SortResults_Page:1185 - Original order is: [1 2 2 2 2 2 2 2 2 2]
-
-2019-06-06 10:39:38 [main] INFO  SortResults_Page:1186 - Sorted ascending order is: [1 2 2 2 2 2 2 2 2 2]
-
-2019-06-06 10:39:38 [main] INFO  SortResults_Page:1190 - It has sorted in ascending order.
-2019-06-06 10:39:59 [main] INFO  SortResults_Page:485 - Original order is: [6 6 6 5 5 5 5 5 5 5]
-
-2019-06-06 10:39:59 [main] INFO  SortResults_Page:486 - Sorted descending order is: [6 6 6 5 5 5 5 5 5 5]
-
-2019-06-06 10:39:59 [main] INFO  SortResults_Page:490 - It has sorted in descending order.
-2019-06-06 10:40:12 [main] INFO  SortResults_Page:706 - Original order is: [1 1 1 1 1 1 1 2 2 2]
-
-2019-06-06 10:40:12 [main] INFO  SortResults_Page:707 - Sorted ascending order is: [1 1 1 1 1 1 1 2 2 2]
-
-2019-06-06 10:40:12 [main] INFO  SortResults_Page:711 - It has sorted in ascending order.
-2019-06-06 10:40:38 [main] INFO  SortResults_Page:105 - Newicon says: NEW
-
-2019-06-06 10:40:38 [main] INFO  SortResults_Page:109 - It has sorted by most recent order.
-2019-06-06 10:40:57 [main] INFO  SortResults_Page:185 - Original order is: [19800000 9250000 8995000 8850000 8380000]
-
-2019-06-06 10:40:57 [main] INFO  SortResults_Page:186 - Sorted descending order is: [19800000 9250000 8995000 8850000 8380000]
-
-2019-06-06 10:40:57 [main] INFO  SortResults_Page:190 - It has sorted in descending order.
-2019-06-06 10:41:10 [main] INFO  SortResults_Page:269 - Original order is: [1800 265000 289900 295000 315000]
-
-2019-06-06 10:41:10 [main] INFO  SortResults_Page:270 - Sorted ascending order is: [1800 265000 289900 295000 315000]
-
-2019-06-06 10:41:10 [main] INFO  SortResults_Page:274 - It has sorted in ascending order.
-2019-06-06 10:41:49 [main] INFO  FilterMoreResults_Page:925 - verify filter keyword - first property has pic.
-2019-06-06 10:41:53 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:41:53 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:41:55 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:41:55 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:41:57 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:41:57 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:41:59 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:41:59 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:935 - verify filter keyword - scroll property description text into view.
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:954 - verify filter keyword - scroll through properties description has keyword.
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:985 - search keyword: master bedroom
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:986 - prop1_description matches: yes
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:987 - prop2_description matches: yes
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:988 - prop3_description matches: yes
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:989 - prop4_description matches: yes
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:990 - prop5_description matches: yes
-2019-06-06 10:42:02 [main] INFO  FilterMoreResults_Page:995 - It filtered by keyword correctly
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1173 - Property type to filter by is Land.
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1174 - prop1_proptype matches: yes
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1175 - prop2_proptype matches: yes
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1176 - prop3_proptype matches: yes
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1177 - prop4_proptype matches: yes
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1178 - prop5_proptype matches: yes
-2019-06-06 10:43:06 [main] INFO  FilterMoreResults_Page:1183 - It filtered by property type correctly
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1509 - Filter by condo/townhouse
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1510 - prop1_proptype matches: yes
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1511 - prop2_proptype matches: yes
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1512 - prop3_proptype matches: yes
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1513 - prop4_proptype matches: yes
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1514 - prop5_proptype matches: yes
-2019-06-06 10:43:55 [main] INFO  FilterMoreResults_Page:1519 - It filtered by condo/townhouse correctly
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1414 - Filter by single family
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1415 - prop1_proptype matches: yes
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1416 - prop2_proptype matches: yes
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1417 - prop3_proptype matches: yes
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1418 - prop4_proptype matches: yes
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1419 - prop5_proptype matches: yes
-2019-06-06 10:44:46 [main] INFO  FilterMoreResults_Page:1424 - It filtered by single family correctly
-2019-06-06 10:45:13 [main] INFO  FilterMoreResults_Page:566 - It filtered by square feet correctly
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:874 - min year: 2000
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:875 - max year 2017
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:876 - prop1_year is : 2010
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:877 - prop2_year is : 2015
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:878 - prop3_year is : 2007
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:879 - prop4_year is : 2017
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:880 - prop5_year is : 2005
-2019-06-06 10:46:11 [main] INFO  FilterMoreResults_Page:885 - It filtered by year correctly
+2019-06-06 19:42:11 [main] INFO  MFilterResults_Page:719 - It filtered by 3 baths successfully.
+2019-06-06 19:42:53 [main] INFO  MFilterResults_Page:687 - It filtered by 3 beds successfully.
+2019-06-06 19:43:54 [main] INFO  MFilterResults_Page:620 - It filter by keyword hardwood floor successfully.
+2019-06-06 19:44:22 [main] INFO  MFilterResults_Page:85 - Active status is unchecked.
+2019-06-06 19:44:23 [main] INFO  MFilterResults_Page:96 - Pending status is unchecked.
+2019-06-06 19:44:23 [main] INFO  MFilterResults_Page:106 - Sold status is unchecked.
+2019-06-06 19:44:27 [main] INFO  MFilterResults_Page:140 - Active status is checked.
+2019-06-06 19:44:39 [main] INFO  MFilterResults_Page:805 - It filtered by for sale active status successfully.
+2019-06-06 19:45:06 [main] INFO  MFilterResults_Page:85 - Active status is unchecked.
+2019-06-06 19:45:07 [main] INFO  MFilterResults_Page:96 - Pending status is unchecked.
+2019-06-06 19:45:07 [main] INFO  MFilterResults_Page:106 - Sold status is unchecked.
+2019-06-06 19:45:11 [main] INFO  MFilterResults_Page:121 - Pending status is checked.
+2019-06-06 19:45:23 [main] INFO  MFilterResults_Page:748 - It filtered by pending status successfully.
+2019-06-06 19:45:50 [main] INFO  MFilterResults_Page:85 - Active status is unchecked.
+2019-06-06 19:45:51 [main] INFO  MFilterResults_Page:96 - Pending status is unchecked.
+2019-06-06 19:45:51 [main] INFO  MFilterResults_Page:106 - Sold status is unchecked.
+2019-06-06 19:45:56 [main] INFO  MFilterResults_Page:130 - Sold status is checked.
+2019-06-06 19:46:08 [main] INFO  MFilterResults_Page:776 - It filtered by sold status successfully.
+2019-06-06 19:46:56 [main] INFO  MFilterResults_Page:966 - Condo, 3+ Story
+2019-06-06 19:47:03 [main] INFO  MFilterResults_Page:980 - Condo, Contemporary, 1 Story
+2019-06-06 19:47:10 [main] INFO  MFilterResults_Page:980 - Condo, 3+ Story
+2019-06-06 19:47:10 [main] INFO  MFilterResults_Page:999 - It filter by condo successfully.
+2019-06-06 19:47:58 [main] INFO  MFilterResults_Page:851 - Single Family, Traditional, 1 Story
+2019-06-06 19:48:06 [main] INFO  MFilterResults_Page:865 - Single Family, 2 Story
+2019-06-06 19:48:13 [main] INFO  MFilterResults_Page:865 - Single Family, 2 Story
+2019-06-06 19:48:13 [main] INFO  MFilterResults_Page:884 - It filter by Single Family successfully.
+2019-06-06 19:49:00 [main] INFO  MFilterResults_Page:908 - Condo/Townhouse, 2 Story
+2019-06-06 19:49:07 [main] INFO  MFilterResults_Page:923 - Condo/Townhouse, Contemporary, 2 Story
+2019-06-06 19:49:14 [main] INFO  MFilterResults_Page:923 - Condo/Townhouse, 1 Story
+2019-06-06 19:49:14 [main] INFO  MFilterResults_Page:942 - It filter by Townhouse successfully.
+2019-06-06 19:50:04 [main] INFO  MFilterResults_Page:655 - It filter by min square feet  1500 and max square feet 2000 successfully.
+2019-06-06 19:51:18 [main] INFO  MFilterResults_Page:516 - yearmatch1 is true
+2019-06-06 19:51:29 [main] INFO  MFilterResults_Page:550 - yearmatch2 is true
+2019-06-06 19:51:41 [main] INFO  MFilterResults_Page:555 - yearmatch3 is true
+2019-06-06 19:51:41 [main] INFO  MFilterResults_Page:563 - It filter by min year 1995 and max year 2015 successfully.
+2019-06-06 19:52:20 [main] INFO  MLogin_Page:167 - Logged in successfully.
+2019-06-06 19:52:35 [main] INFO  MSearch:95 - It filtered out the addresses correctly.
+2019-06-06 19:53:01 [main] INFO  MLogin_Page:82 - sqatester2018+06062019195301@gmail.com
+2019-06-06 19:53:19 [main] INFO  MLogin_Page:109 - Welcome Amy
+2019-06-06 19:53:19 [main] INFO  MLogin_Page:118 - Signed up successfully.
+2019-06-06 20:40:51 [main] INFO  MFilterResults_Page:719 - It filtered by 3 baths successfully.
+2019-06-06 20:41:31 [main] INFO  MFilterResults_Page:687 - It filtered by 3 beds successfully.
+2019-06-06 20:42:35 [main] INFO  MFilterResults_Page:620 - It filter by keyword hardwood floor successfully.
+2019-06-06 20:43:03 [main] INFO  MFilterResults_Page:85 - Active status is unchecked.
+2019-06-06 20:43:04 [main] INFO  MFilterResults_Page:96 - Pending status is unchecked.
+2019-06-06 20:43:05 [main] INFO  MFilterResults_Page:106 - Sold status is unchecked.
+2019-06-06 20:43:09 [main] INFO  MFilterResults_Page:140 - Active status is checked.
+2019-06-06 20:43:21 [main] INFO  MFilterResults_Page:805 - It filtered by for sale active status successfully.
+2019-06-06 20:43:49 [main] INFO  MFilterResults_Page:85 - Active status is unchecked.
+2019-06-06 20:43:49 [main] INFO  MFilterResults_Page:96 - Pending status is unchecked.
+2019-06-06 20:43:50 [main] INFO  MFilterResults_Page:106 - Sold status is unchecked.
+2019-06-06 20:43:54 [main] INFO  MFilterResults_Page:121 - Pending status is checked.
+2019-06-06 20:44:06 [main] INFO  MFilterResults_Page:748 - It filtered by pending status successfully.
+2019-06-06 20:44:34 [main] INFO  MFilterResults_Page:85 - Active status is unchecked.
+2019-06-06 20:44:35 [main] INFO  MFilterResults_Page:96 - Pending status is unchecked.
+2019-06-06 20:44:35 [main] INFO  MFilterResults_Page:106 - Sold status is unchecked.
+2019-06-06 20:44:40 [main] INFO  MFilterResults_Page:130 - Sold status is checked.
+2019-06-06 20:44:52 [main] INFO  MFilterResults_Page:776 - It filtered by sold status successfully.
+2019-06-06 20:45:42 [main] INFO  MFilterResults_Page:966 - Condo, 3+ Story
+2019-06-06 20:45:49 [main] INFO  MFilterResults_Page:980 - Condo, Contemporary, 1 Story
+2019-06-06 20:45:56 [main] INFO  MFilterResults_Page:980 - Condo, 3+ Story
+2019-06-06 20:45:56 [main] INFO  MFilterResults_Page:999 - It filter by condo successfully.
+2019-06-06 20:46:45 [main] INFO  MFilterResults_Page:851 - Single Family, Traditional, 1 Story
+2019-06-06 20:46:52 [main] INFO  MFilterResults_Page:865 - Single Family, 2 Story
+2019-06-06 20:46:59 [main] INFO  MFilterResults_Page:865 - Single Family, 2 Story
+2019-06-06 20:46:59 [main] INFO  MFilterResults_Page:884 - It filter by Single Family successfully.
+2019-06-06 20:47:47 [main] INFO  MFilterResults_Page:908 - Condo/Townhouse, 3 Story
+2019-06-06 20:47:54 [main] INFO  MFilterResults_Page:923 - Condo/Townhouse, 2 Story
+2019-06-06 20:48:01 [main] INFO  MFilterResults_Page:923 - Condo/Townhouse, Contemporary, 2 Story
+2019-06-06 20:48:01 [main] INFO  MFilterResults_Page:942 - It filter by Townhouse successfully.
+2019-06-06 20:48:51 [main] INFO  MFilterResults_Page:655 - It filter by min square feet  1500 and max square feet 2000 successfully.
+2019-06-06 20:50:05 [main] INFO  MFilterResults_Page:516 - yearmatch1 is true
+2019-06-06 20:50:17 [main] INFO  MFilterResults_Page:550 - yearmatch2 is true
+2019-06-06 20:53:39 [main] INFO  MFilterResults_Page:555 - yearmatch3 is true
+2019-06-06 20:53:39 [main] INFO  MFilterResults_Page:563 - It filter by min year 1995 and max year 2015 successfully.
+2019-06-06 20:54:19 [main] INFO  MLogin_Page:167 - Logged in successfully.
+2019-06-06 20:54:34 [main] INFO  MSearch:95 - It filtered out the addresses correctly.
+2019-06-06 20:55:03 [main] INFO  MLogin_Page:82 - sqatester2018+06062019205503@gmail.com
+2019-06-06 20:55:20 [main] INFO  MLogin_Page:109 - Welcome Amy
+2019-06-06 20:55:20 [main] INFO  MLogin_Page:118 - Signed up successfully.
