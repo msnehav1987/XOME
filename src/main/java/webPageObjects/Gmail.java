@@ -28,9 +28,9 @@ public class Gmail {
 			final static Logger log = LogManager.getLogger(Gmail.class);
 			
 			static By loginemail = By.cssSelector("div.Xb9hP>input.whsOnd.zHQkBf");
-			static By nextbtn = By.cssSelector("div#identifierNext>content.CwaK9>span.RveJvd.snByac");
+			static By nextbtn = By.xpath(".//span[@class='RveJvd snByac' and contains(text(),'Next')]");
 			static By pwd = By.cssSelector("div#password>div.aCsJod.oJeWuf>div.aXBtI.Wic03c>div.Xb9hP>input.whsOnd.zHQkBf");
-			static By pwdnextbtn = By.cssSelector("div#passwordNext>content.CwaK9>span.RveJvd.snByac");
+			static By pwdnextbtn = By.xpath(".//span[@class='RveJvd snByac' and contains(text(), 'Next')]");
 			
 			static By searchemailfield = By.cssSelector("input.gb_Qe");
 			static By searchemailbutton = By.cssSelector("button.gb_0e.gb_1e>svg");
@@ -40,7 +40,7 @@ public class Gmail {
 			static By thankyoutext1 = By.cssSelector("td[class*='message_header2']"); //Thank you for registering for
 		    //static By emailtext = By.xpath(".//strong/parent::td"); //Your username is:
 			static By emailtext = By.cssSelector("td[class*='message_header3']"); //Your username is:
-			
+
 			/*** Doesn't work
 		    static By toptooltipbar = By.cssSelector("div[gh='tm']");
 		    static By deletetoptooltip= By.cssSelector("div.asa>div.ar9.T-I-J3.J-J5-Ji");
@@ -61,9 +61,9 @@ public class Gmail {
 		    		webdriver.get("https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
 		    		WebDriverWait wait = new WebDriverWait (webdriver, 90);
 		    		WebElement login = wait.until(ExpectedConditions.elementToBeClickable(loginemail));
-		    		WebElement next1 = wait.until(ExpectedConditions.elementToBeClickable(nextbtn));
 		        login.clear();
 		        login.sendKeys(email);
+	    		    WebElement next1 = wait.until(ExpectedConditions.elementToBeClickable(nextbtn));
 			    next1.click();
 			    
 			    WebElement password = wait.until(ExpectedConditions.elementToBeClickable(pwd));
